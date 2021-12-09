@@ -1,10 +1,84 @@
 body {
-  background-color: aqua;
+  min-height: 125vh;
+}
+
+.burger a {
+  color: initial;
+  text-decoration: none;
+}
+
+.open {
+  z-index: 1000;
+  width: 4rem;
+  margin-left: 0.75rem;
+}
+.open .burger-open ul {
+  margin: 0.75rem 0;
+  height: 0.5rem;
+  width: 100%;
+  background-color: black;
+}
+
+.close {
+  width: 75%;
+  min-height: 75vh;
+  padding-bottom: 5vh;
+  height: auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  border-radius: 0 0 4em 0;
+  border: 1px solid black;
+  background-color: white;
+}
+.close .burger-close {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.close .burger-close img {
+  height: 4rem;
+  width: 4rem;
+}
+.close .burger-close a {
+  padding: 0.75rem;
+}
+.close .burger-close p {
+  width: auto;
+}
+.close :last-child ul {
+  border-bottom: none;
+}
+.close ul {
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+}
+.close ul .sub-title {
+  display: none;
+  padding: 1rem 0;
+}
+.close ul .sub-title p {
+  margin-left: 6.25rem;
+}
+.close ul p {
+  margin-left: 6.25rem;
+}
+
+footer {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
