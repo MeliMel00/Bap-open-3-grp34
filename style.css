@@ -1,10 +1,24 @@
 body {
   min-height: 125vh;
+  top: 0;
 }
 
-.burger a {
+a {
   color: initial;
   text-decoration: none;
+}
+
+header {
+  width: 100%;
+  background-color: #555454;
+  height: 12vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 25%;
 }
 
 .open {
@@ -13,10 +27,12 @@ body {
   margin-left: 0.75rem;
 }
 .open .burger-open ul {
-  margin: 0.75rem 0;
   height: 0.5rem;
   width: 100%;
   background-color: black;
+}
+.open .burger-open a :nth-child(1), .open .burger-open a :nth-child(2) {
+  margin-bottom: 0.75em;
 }
 
 .close {
@@ -65,6 +81,34 @@ body {
 }
 .close ul p {
   margin-left: 6.25rem;
+}
+
+.logo-header {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.logo-header .logo {
+  height: 100%;
+  background-color: white;
+  width: 8rem;
+}
+
+.btn-inscription {
+  display: flex;
+  height: 2rem;
+  width: 25%;
+  background-color: white;
+  border-radius: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+.btn-inscription a {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 11px;
 }
 
 footer {
