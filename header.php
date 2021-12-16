@@ -60,7 +60,10 @@
     <div class="logo-header">
         <div class="logo"></div>
     </div>
-    <div class="btn-inscription">
-        <a href="#">inscription</a>
-    </div>
+    <a href="inscription.php">
+        <div class="btn-inscription">
+            <p>inscription</p>
+        </div>
+    </a>
+    
 </header>
