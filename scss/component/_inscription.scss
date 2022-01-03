@@ -1,0 +1,57 @@
+.div-inscription{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 0;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .title-inscription{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 32px;
+    }
+
+    .champ{
+        width: 100%;
+        border: 0;
+        padding-left: 10px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        background: none;
+        border-radius: 0;
+        border-bottom: solid black 1px;
+        margin: 5% 0;
+    }
+
+    .btn-envoyer{
+        width: 60%;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        background: none;
+        border: solid black 1px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .btn-envoyer:active{
+        color: gray;
+        border: solid gray 1px;
+    }
+}
+

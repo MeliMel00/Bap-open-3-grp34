@@ -1,5 +1,4 @@
 body {
-  min-height: 125vh;
   top: 0;
 }
 
@@ -276,6 +275,75 @@ footer {
   justify-content: center;
   align-items: center;
   height: 200px;
+}
+
+.div-inscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 200px 0;
+}
+.div-inscription div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.div-inscription form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.div-inscription .title-inscription {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 32px;
+}
+.div-inscription .champ {
+  width: 100%;
+  border: 0;
+  padding-left: 10px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  border-bottom: solid black 1px;
+  margin: 5% 0;
+}
+.div-inscription .btn-envoyer {
+  width: 60%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.div-inscription .btn-envoyer:active {
+  color: gray;
+  border: solid gray 1px;
+}
+
+.success {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.success h2 {
+  color: green;
+  margin: 3%;
+}
+.success a {
+  color: blue;
+  font-size: large;
+}
+.success a:hover {
+  text-decoration: underline;
 }
 
 * {
