@@ -16,6 +16,11 @@ header {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 450px) {
+  header {
+    background-color: yellow;
+  }
+}
 
 nav {
   width: 25%;
