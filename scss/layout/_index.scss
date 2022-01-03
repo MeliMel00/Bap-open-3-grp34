@@ -7,3 +7,141 @@ a {
     color: initial;
     text-decoration: none;
 }
+section {
+    min-height: 10px;
+    padding: 4% 5%;    
+}
+.title-sect {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+section:nth-of-type(1) {
+    align-items: center;
+
+  
+  ul {
+      padding: 1rem 0;
+      width:300px ;
+  }
+  .btn-inscription{
+      background-color: #757575;
+      width: 5rem;
+  }
+}
+
+section:nth-of-type(2){
+    height: auto;
+    ul {
+        padding: 1rem 0;
+    }
+    ul:nth-of-type(2){
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+    }
+    .div-conf {
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+    .div-conf:nth-of-type(1){
+        top: 50px;
+        left: 15px;
+        z-index: 1000;
+        .img-conf{
+            background-color: darkblue;
+        }
+    }
+    .div-conf:nth-of-type(2){
+        right: 15px;
+        z-index: 5000;
+        .img-conf {
+            background-color: chartreuse;
+        }
+        .text-conf{
+            margin-left: 30px;
+        }
+    }
+    .img-conf {
+        width: 100%;
+        height:180px;
+    }
+    .text-conf{
+        padding: 1rem 0.5rem;
+        :nth-child(1){
+            font-weight:bold;
+        }
+        :nth-last-child(1){
+            float: right;
+            text-decoration: underline;
+        }
+    }
+    
+}
+section:nth-of-type(3){
+    .card-sect-ul{
+        
+        display: flex;
+        flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .card-hackaton-1{
+        position: relative;
+        left: 30px;
+        height: 200px;
+        width: 350px;
+        background-color: cornsilk;
+        z-index: 5000;
+    }
+    .card-hackaton-2{
+        position: relative;
+        right: 30px;
+        height: 400px;
+        width: 400px;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        ul:nth-child(1){
+            padding: 2rem 0 2rem 0;
+            line-height: 3rem;
+        }
+        ul:nth-child(2){
+            padding: 2rem 2rem 2rem 0;
+        }
+        ul{
+            margin-left: auto;
+            width: 66%;
+        }
+        
+        a {
+            float: right;
+        }
+    }
+}
+section:nth-of-type(4){
+    :nth-child(n+1){
+        padding: 1rem 0;
+    }
+    p{
+        width: 300px;
+    }
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        :nth-child(1){
+            width: 300px;
+            margin-bottom: 2rem;
+        }
+        :nth-child(2){
+            width: 100px;
+        }
+    }
+}

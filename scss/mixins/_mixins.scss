@@ -3,12 +3,13 @@
         @content
     }
 }
+
 @mixin s {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1024px) {
         @content
     }
 }
-@mixin xs{
+@mixin xxs{
     @media screen and (max-width: 450px){
         @content
     }

@@ -60,6 +60,15 @@
     <div class="logo-header">
         <div class="logo"></div>
     </div>
+    <a href="#" class ="link-desc">
+        <p>Titre</p>
+    </a>
+    <a href="#" class ="link-desc">
+        <p>Titre</p>
+    </a>
+    <a href="#" class ="link-desc">
+        <p>Titre</p>
+    </a>
     <a href="inscription.php">
         <div class="btn-inscription">
             <p>inscription</p>

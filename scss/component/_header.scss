@@ -1,22 +1,28 @@
 @import  "../mixins/mixins";
 header{
-    width: 100%;
+    width: auto;
     background-color: rgb(85, 84, 84);
     height: 12vh;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    @include xs {
+    justify-content: space-between;
+    // justify-content: center;
+    padding: 0 5%;
+    @include s {
         background-color: yellow;
     }
 }
 nav {
+    display: none;
     width: 25%;
+    @include s {
+        display: flex;
+    }
 }
 .open{
     z-index: 1000;
     width: 4rem;
-    margin-left: 0.75rem;
 
     .burger-open {
         ul{
@@ -89,10 +95,12 @@ nav {
 
 .logo-header{
     
-    width: 50%;
+    width: 8rem;
     height: 3rem;
     display: flex;
-    justify-content: center;
+    @include xs {
+        justify-content: center;
+    }
     .logo {
         height: 100%;
         background-color: white;
@@ -108,11 +116,18 @@ nav {
     border-radius: 5rem;
     align-items: center;
     justify-content: center;
-    margin-right: 0.75rem;
     a{
         text-transform: uppercase;
         font-weight: bolder;
         font-size: 11px;
+    }
+}
+
+.link-desc {
+    display: flex;
+    padding: 1rem 2rem;
+    @include xs {
+        display: none;
     }
 }
 
