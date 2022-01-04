@@ -58,21 +58,17 @@
         </div>
     </nav>
     <div class="logo-header">
-        <div class="logo"></div>
+        <img src="./img/logo_open_3.png" alt="">
     </div>
-    <a href="#" class ="link-desc">
-        <p>Titre</p>
-    </a>
-    <a href="#" class ="link-desc">
-        <p>Titre</p>
-    </a>
-    <a href="#" class ="link-desc">
-        <p>Titre</p>
-    </a>
-    <a href="inscription.php">
-        <div class="btn-inscription">
-            <p>inscription</p>
-        </div>
-    </a>
+    <div class="link-page">
+        <a href="#" class ="link-desc">Accueil</a>
+        <a href="#" class ="link-desc">À propos</a>
+        <a href="#" class ="link-desc">Contact</a>
+        <a href="inscription.php">
+            <div class="btn-inscription">
+                <p>inscription</p>
+            </div>
+        </a>
+    </div>
     
 </header>

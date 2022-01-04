@@ -33,6 +33,7 @@
             </div>
         </a>
         </ul>
+        <img src="./img/bc.png" alt="">
     </section>
     <section>
         <ul>

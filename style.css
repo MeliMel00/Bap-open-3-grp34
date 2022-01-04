@@ -19,6 +19,7 @@ section {
 
 section:nth-of-type(1) {
   align-items: center;
+  background-image: url(.../img/bc.png);
 }
 section:nth-of-type(1) ul {
   padding: 1rem 0;
@@ -179,6 +180,10 @@ nav {
 }
 .open .burger-open a :nth-child(1), .open .burger-open a :nth-child(2) {
   margin-bottom: 0.75em;
+}
+
+.link-page {
+  display: inline-flex;
 }
 
 .close {
