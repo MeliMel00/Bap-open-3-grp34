@@ -48,26 +48,20 @@ section.index:nth-of-type(2) ul:nth-of-type(2) {
   justify-content: center;
 }
 section.index:nth-of-type(2) .div-conf {
-  width: 300px;
+  width: 500px;
   height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 section.index:nth-of-type(2) .div-conf:nth-of-type(1) {
-  top: 50px;
+  top: 75px;
   left: 15px;
   z-index: 1000;
-}
-section.index:nth-of-type(2) .div-conf:nth-of-type(1) .img-conf {
-  background-color: darkblue;
 }
 section.index:nth-of-type(2) .div-conf:nth-of-type(2) {
   right: 15px;
   z-index: 5000;
-}
-section.index:nth-of-type(2) .div-conf:nth-of-type(2) .img-conf {
-  background-color: chartreuse;
 }
 section.index:nth-of-type(2) .div-conf:nth-of-type(2) .text-conf {
   margin-left: 30px;
@@ -87,6 +81,9 @@ section.index:nth-of-type(2) .text-conf :nth-last-child(1) {
   text-decoration: underline;
 }
 
+section.index:nth-of-type(3) {
+  background-color: #232323;
+}
 section.index:nth-of-type(3) .card-sect-ul {
   display: flex;
   flex-direction: row;
@@ -96,9 +93,8 @@ section.index:nth-of-type(3) .card-sect-ul {
 section.index:nth-of-type(3) .card-hackaton-1 {
   position: relative;
   left: 30px;
-  height: 200px;
-  width: 350px;
-  background-color: cornsilk;
+  height: auto;
+  width: 550px;
   z-index: 5000;
 }
 section.index:nth-of-type(3) .card-hackaton-2 {
@@ -106,7 +102,7 @@ section.index:nth-of-type(3) .card-hackaton-2 {
   right: 30px;
   height: 400px;
   width: 400px;
-  background-color: blue;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,24 +120,42 @@ section.index:nth-of-type(3) .card-hackaton-2 ul {
 }
 section.index:nth-of-type(3) .card-hackaton-2 a {
   float: right;
+  text-decoration: underline;
 }
 
-section.index:nth-of-type(4) :nth-child(n+1) {
-  padding: 1rem 0;
+section.index:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 200px;
 }
 section.index:nth-of-type(4) p {
-  width: 300px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 section.index:nth-of-type(4) .newsletter {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
 }
-section.index:nth-of-type(4) .newsletter :nth-child(1) {
-  width: 300px;
-  margin-bottom: 2rem;
+section.index:nth-of-type(4) .newsletter input, section.index:nth-of-type(4) .newsletter button {
+  padding: 1rem 1rem;
+  border: 1px solid #ebebeb;
 }
-section.index:nth-of-type(4) .newsletter :nth-child(2) {
-  width: 100px;
+section.index:nth-of-type(4) .newsletter input {
+  width: 90%;
+  color: #1a1a1a;
+}
+section.index:nth-of-type(4) .newsletter button {
+  cursor: pointer;
+  background-color: transparent;
+}
+section.index:nth-of-type(4) .newsletter button :nth-child(1) {
+  opacity: 50%;
 }
 
 * {
@@ -286,6 +300,9 @@ footer {
   justify-content: center;
   align-items: center;
   height: 200px;
+}
+footer :nth-child(2) {
+  margin: 0 1rem;
 }
 
 .div-inscription {
