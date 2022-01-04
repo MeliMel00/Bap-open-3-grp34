@@ -17,77 +17,83 @@ section {
   text-decoration: underline;
 }
 
-section:nth-of-type(1) {
-  align-items: center;
-  background-image: url(.../img/bc.png);
+section.index:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("img/bc.png");
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 700px;
 }
-section:nth-of-type(1) ul {
-  padding: 1rem 0;
+section.index:nth-of-type(1) ul {
+  padding: 2rem 0;
   width: 300px;
 }
-section:nth-of-type(1) .btn-inscription {
+section.index:nth-of-type(1) .btn-inscription {
   background-color: #757575;
   width: 5rem;
+  color: white;
 }
 
-section:nth-of-type(2) {
+section.index:nth-of-type(2) {
   height: auto;
 }
-section:nth-of-type(2) ul {
+section.index:nth-of-type(2) ul {
   padding: 1rem 0;
 }
-section:nth-of-type(2) ul:nth-of-type(2) {
+section.index:nth-of-type(2) ul:nth-of-type(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-section:nth-of-type(2) .div-conf {
+section.index:nth-of-type(2) .div-conf {
   width: 300px;
   height: auto;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-section:nth-of-type(2) .div-conf:nth-of-type(1) {
+section.index:nth-of-type(2) .div-conf:nth-of-type(1) {
   top: 50px;
   left: 15px;
   z-index: 1000;
 }
-section:nth-of-type(2) .div-conf:nth-of-type(1) .img-conf {
+section.index:nth-of-type(2) .div-conf:nth-of-type(1) .img-conf {
   background-color: darkblue;
 }
-section:nth-of-type(2) .div-conf:nth-of-type(2) {
+section.index:nth-of-type(2) .div-conf:nth-of-type(2) {
   right: 15px;
   z-index: 5000;
 }
-section:nth-of-type(2) .div-conf:nth-of-type(2) .img-conf {
+section.index:nth-of-type(2) .div-conf:nth-of-type(2) .img-conf {
   background-color: chartreuse;
 }
-section:nth-of-type(2) .div-conf:nth-of-type(2) .text-conf {
+section.index:nth-of-type(2) .div-conf:nth-of-type(2) .text-conf {
   margin-left: 30px;
 }
-section:nth-of-type(2) .img-conf {
+section.index:nth-of-type(2) .img-conf {
   width: 100%;
   height: 180px;
 }
-section:nth-of-type(2) .text-conf {
+section.index:nth-of-type(2) .text-conf {
   padding: 1rem 0.5rem;
 }
-section:nth-of-type(2) .text-conf :nth-child(1) {
+section.index:nth-of-type(2) .text-conf :nth-child(1) {
   font-weight: bold;
 }
-section:nth-of-type(2) .text-conf :nth-last-child(1) {
+section.index:nth-of-type(2) .text-conf :nth-last-child(1) {
   float: right;
   text-decoration: underline;
 }
 
-section:nth-of-type(3) .card-sect-ul {
+section.index:nth-of-type(3) .card-sect-ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-section:nth-of-type(3) .card-hackaton-1 {
+section.index:nth-of-type(3) .card-hackaton-1 {
   position: relative;
   left: 30px;
   height: 200px;
@@ -95,7 +101,7 @@ section:nth-of-type(3) .card-hackaton-1 {
   background-color: cornsilk;
   z-index: 5000;
 }
-section:nth-of-type(3) .card-hackaton-2 {
+section.index:nth-of-type(3) .card-hackaton-2 {
   position: relative;
   right: 30px;
   height: 400px;
@@ -105,36 +111,36 @@ section:nth-of-type(3) .card-hackaton-2 {
   flex-direction: column;
   justify-content: space-between;
 }
-section:nth-of-type(3) .card-hackaton-2 ul:nth-child(1) {
+section.index:nth-of-type(3) .card-hackaton-2 ul:nth-child(1) {
   padding: 2rem 0 2rem 0;
   line-height: 3rem;
 }
-section:nth-of-type(3) .card-hackaton-2 ul:nth-child(2) {
+section.index:nth-of-type(3) .card-hackaton-2 ul:nth-child(2) {
   padding: 2rem 2rem 2rem 0;
 }
-section:nth-of-type(3) .card-hackaton-2 ul {
+section.index:nth-of-type(3) .card-hackaton-2 ul {
   margin-left: auto;
   width: 66%;
 }
-section:nth-of-type(3) .card-hackaton-2 a {
+section.index:nth-of-type(3) .card-hackaton-2 a {
   float: right;
 }
 
-section:nth-of-type(4) :nth-child(n+1) {
+section.index:nth-of-type(4) :nth-child(n+1) {
   padding: 1rem 0;
 }
-section:nth-of-type(4) p {
+section.index:nth-of-type(4) p {
   width: 300px;
 }
-section:nth-of-type(4) .newsletter {
+section.index:nth-of-type(4) .newsletter {
   display: flex;
   flex-direction: column;
 }
-section:nth-of-type(4) .newsletter :nth-child(1) {
+section.index:nth-of-type(4) .newsletter :nth-child(1) {
   width: 300px;
   margin-bottom: 2rem;
 }
-section:nth-of-type(4) .newsletter :nth-child(2) {
+section.index:nth-of-type(4) .newsletter :nth-child(2) {
   width: 100px;
 }
 

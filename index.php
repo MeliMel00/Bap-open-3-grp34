@@ -19,12 +19,12 @@
     ?>
     
         
-    <section>
+    <section class="index">
         <ul>
             <h2 class="title-sect">Programme de OPEN 3</h2>
         </ul>
         <ul>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, odit harum aliquid deserunt maxime temporibus facere aliquam doloremque consequatur illum cumque pariatur incidunt unde amet debitis ea! Enim, esse. Nemo?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, odit harum aliquid deserunt maxime temporibus facere aliquam doloremque consequatur illum cumque pariatur incidunt unde amet debitis ea! Enim, esse. Nemo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, odit harum aliquid deserunt maxime temporibus facere aliquam doloremque consequatur illum cumque pariatur incidunt unde amet debitis ea! Enim, esse. Nemo?</p>
         </ul>
         <ul>
         <a href="inscription.php">
@@ -33,19 +33,28 @@
             </div>
         </a>
         </ul>
-        <img src="./img/bc.png" alt="">
     </section>
-    <section>
+    <section class="index">
         <ul>
             <h2 class="title-sect">Conférents de OPEN3</h2>
         </ul>
         <ul>
-        <?php include 'card-conf.php'; ?>
-        <?php include 'card-conf.php'; ?>
+        <div class="div-conf">
+        <div class="img-conf">
+            <!-- <img src="#" alt="img conférence numero 1"> -->
+        </div>
+        <div class="text-conf">
+            
+            <li>Titre</li>
+            <li>Date</li>
+            <li>Lieu</li>
+            <li>plus</li>
+        </div>
+        </div>
         </ul>
     </section>
 
-    <section>
+    <section class="index">
         <ul class="title-sect-ul">
             <h2 class="title-sect">Hackaton de OPEN3</h2>
         </ul>
@@ -66,7 +75,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="index">
     <ul class="title-sect-ul">
             <h2 class="title-sect">Newsletter</h2>
         </ul>
