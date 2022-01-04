@@ -1,0 +1,142 @@
+.about{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+
+    h2{
+        font-size: 32px;
+        margin: 5%;
+    }
+
+    p{
+        font-size: 24px;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+}
+
+.black{
+    background-color: #232323;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.section2{
+
+    h2{
+        font-size: 32px;
+        margin-bottom: 10%;
+    }
+
+    p{
+        font-size: 24px;
+        margin-bottom: 5%;
+        width: 90%;
+    }
+
+    .text{
+        width: 50%;
+        margin: 5% 5% 5% 10%;
+    }
+
+    .image{
+        width: 40%;
+        margin: 5% 10% 5% 5%;
+
+        .left{
+            float: left;
+            width: 48%;
+            margin-right: 2%;
+        }
+
+        .right{
+            float: right;
+            width: 48%;
+            margin-left: 2%;
+        }
+
+        .bottom{
+            width: 100%;
+            margin-top: 4%;
+        }
+
+    }
+}
+
+.equipe{
+
+    background-color: #F8F8F8;
+    text-align: center;
+
+    h2{
+        font-size: 32px;
+        margin: 5% 0;
+    }
+
+    p{
+        font-size: 24px;
+    }
+
+    .image{
+        margin: 8% 0 5% 0;
+        display: flex;
+        flex-direction: row;
+
+        div{
+            width: 15%;
+            height: auto;
+            margin: auto;
+
+            p{
+                margin: 5%;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    img{
+        width: 100%;
+        border-radius: 50%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 2%;
+        object-fit: cover;
+    }
+}
+
+.lastsection{
+
+    flex-direction: column;
+
+    h2{
+        font-size: 32px;
+        margin: 5%;
+    }
+
+    .image{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+
+    img{
+        margin: 2%;
+        width: 25%;
+    }
+
+    footer{
+        background-color: #232323;
+        color: white;
+    }
+}

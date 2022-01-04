@@ -40,43 +40,33 @@
         </ul>
         <ul>
         <div class="div-conf">
-            <img src="./img/img-men-2.png" alt="">
+        <div class="img-conf">
             <!-- <img src="#" alt="img conférence numero 1"> -->
-            </img>
-            <div class="text-conf">
-                <li>Conférence Innovation</li>
-                <li>Date: 18 Mars 2022</li>
-                <li>Lieu: IIM</li>
-                <li>plus</li>
-            </div>
         </div>
-        <div class="div-conf">
-            <img src="./img/img-girl-1.png" alt="">
-            <!-- <img src="#" alt="img conférence numero 1"> -->
-            </img>
-            <div class="text-conf">
-                <li>Conférence Data et Source</li>
-                <li>Date: 18 Mars 2022</li>
-                <li>Lieu: IIM</li>
-                <li>plus</li>
-            </div>
+        <div class="text-conf">
+            
+            <li>Titre</li>
+            <li>Date</li>
+            <li>Lieu</li>
+            <li>plus</li>
+        </div>
         </div>
         </ul>
     </section>
 
     <section class="index">
         <ul class="title-sect-ul">
-            <h2 class="title-sect" style="color: white">Hackaton de OPEN3</h2>
+            <h2 class="title-sect">Hackaton de OPEN3</h2>
         </ul>
         <ul class="card-sect-ul">
-            <img src="./img/img-men-1.png" class="card-hackaton-1">
+            <div class="card-hackaton-1">
 
             </div>
             <div class="card-hackaton-2">
                 <ul>
-                    <li>Hackaton</li>
-                    <li>Date: 22 Mars 2022</li>
-                    <li>Lieu: IIM</li>
+                    <li>Titre</li>
+                    <li>Date</li>
+                    <li>Lieu</li>
                 </ul>
                 <ul>
                     <a href="#">Plus</a>
@@ -87,12 +77,12 @@
 
     <section class="index">
     <ul class="title-sect-ul">
-            <h2 class="title-sect" style="text-decoration: none">Newsletter</h2>
+            <h2 class="title-sect">Newsletter</h2>
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente commodi ullam saepe iure soluta nam totam omnis sunt rerum odio in vero quasi, maxime incidunt, eius pariatur rem repellat deleniti.</p>
         <div class="newsletter">
-            <input type="text" placeholder="Votre Email">
-            <button type="submit"><i class="fas fa-chevron-right"></i></button>
+            <input type="text" placeholder="E_mail">
+            <button type="submit">Envoyer</button>
         </div> 
     </section>
         <?php

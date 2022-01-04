@@ -45,7 +45,7 @@ section.index:nth-of-type(2){
        justify-content: center;
     }
     .div-conf {
-        width: 500px;
+        width: 300px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -53,15 +53,19 @@ section.index:nth-of-type(2){
 
     }
     .div-conf:nth-of-type(1){
-        top: 75px;
+        top: 50px;
         left: 15px;
         z-index: 1000;
-        
+        .img-conf{
+            background-color: darkblue;
+        }
     }
     .div-conf:nth-of-type(2){
         right: 15px;
         z-index: 5000;
-        
+        .img-conf {
+            background-color: chartreuse;
+        }
         .text-conf{
             margin-left: 30px;
         }
@@ -83,20 +87,20 @@ section.index:nth-of-type(2){
     
 }
 section.index:nth-of-type(3){
-    background-color: #232323;
     .card-sect-ul{
         
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+       justify-content: center;
+       align-items: center;
     }
     
     .card-hackaton-1{
         position: relative;
         left: 30px;
-        height: auto;
-        width: 550px;
+        height: 200px;
+        width: 350px;
+        background-color: cornsilk;
         z-index: 5000;
     }
     .card-hackaton-2{
@@ -104,7 +108,7 @@ section.index:nth-of-type(3){
         right: 30px;
         height: 400px;
         width: 400px;
-        background-color: rgb(255, 255, 255);
+        background-color: blue;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -123,44 +127,25 @@ section.index:nth-of-type(3){
         
         a {
             float: right;
-            text-decoration: underline;
         }
     }
 }
 section.index:nth-of-type(4){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 200px;
-    
+    :nth-child(n+1){
+        padding: 1rem 0;
+    }
     p{
-        width: 40%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 300px;
     }
     .newsletter{
         display: flex;
-        flex-direction: row;
-        width: 35%;
-        margin-left: auto;
-        margin-right: auto;
-
-        input, button {
-            padding: 1rem 1rem;
-            border: 1px solid #ebebeb;
+        flex-direction: column;
+        :nth-child(1){
+            width: 300px;
+            margin-bottom: 2rem;
         }
-        input {
-            width: 90%;
-            color: #1a1a1a;
-        }
-        button {
-            cursor: pointer;
-            background-color: transparent;
-            :nth-child(1){
-                opacity: 50%;
-            }
+        :nth-child(2){
+            width: 100px;
         }
     }
-    
 }
