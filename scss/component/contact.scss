@@ -1,0 +1,100 @@
+@import  "../mixins/mixins";
+section.contact:nth-of-type(1) {
+    display: inline-flex;
+    background: linear-gradient(90deg, black 50%, #BD8EF2 50%);
+    width: 90%;
+    @include s{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    .left-contact {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include s{
+            width: 90%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            .champ {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                border: 1px solid #707070;
+                resize: none;
+                color: #928888;
+            }
+        }
+        .message{
+            margin-top: 0;
+            height: 5em;
+        }
+        .submit {
+            width: 40%;
+            border-radius: 1rem;
+        }
+    }
+    .right-contact{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 5%;
+        @include s{
+            margin-left: 0;
+        }
+        .info-contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            width: 50%;
+            height: auto;
+            @include s{
+                width: 50%;
+            }
+            ul{
+                padding:1.2rem 0;
+                span{    
+                    font-size: 1.5em;
+                    padding: 0 1.5rem;
+                    @include s{
+                        font-size: 1rem;
+                    }
+                }
+                li{  
+                    font-size: 1.5rem;
+                    padding: 0 2.5rem;
+                    @include s{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .map-contact{
+            width: auto;
+            @include s{
+                width: 50%;
+                height: 50%;
+                
+            }
+        }
+        .map-contact img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .incon-sm{
+            :nth-child(n+1){
+                // width: 10px;
+                // height: auto;
+            }
+        }
+    }
+}

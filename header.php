@@ -61,9 +61,9 @@
         <img src="./img/logo_open_3.png" alt="">
     </div>
     <div class="link-page">
-        <a href="#" class ="link-desc">Accueil</a>
-        <a href="#" class ="link-desc">À propos</a>
-        <a href="#" class ="link-desc">Contact</a>
+        <a href="index.php" class ="link-desc">Accueil</a>
+        <a href="about.php" class ="link-desc">À propos</a>
+        <a href="contact.php" class ="link-desc">Contact</a>
         <a href="inscription.php">
             <div class="btn-inscription">
                 <p>inscription</p>
