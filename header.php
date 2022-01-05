@@ -15,29 +15,29 @@
                     <a href="#"><img src="./img/times-solid.svg" alt="" class="close-div"></a>
                     <a href="#"><p class="close-div">FERMER</p></a>
                 </div>
-                <a href="#">
+                <a href="index.php">
                     <ul>
-                        <p>TITRE</p>
+                        <p>Accueil</p>
+                    </ul>
+                </a>
+                <a href="about.php">
+                    <ul>
+                        <p>À propos</p>
+                    </ul>
+                </a>
+                <a href="contact.php">
+                    <ul>
+                        <p>Contact</p>
+                    </ul>
+                </a>
+                <a href="inscription.php">
+                    <ul>
+                        <p>Inscription</p>
                     </ul>
                 </a>
                 <a href="#">
                     <ul>
-                        <p>TITRE</p>
-                    </ul>
-                </a>
-                <a href="#">
-                    <ul>
-                        <p>TITRE</p>
-                    </ul>
-                </a>
-                <a href="#">
-                    <ul>
-                        <p>TITRE</p>
-                    </ul>
-                </a>
-                <a href="#">
-                    <ul>
-                        <p>TITRE</p>
+                        <p>Conférence</p>
                     </ul>
                 </a>
                 <a href="#" class="histoire">

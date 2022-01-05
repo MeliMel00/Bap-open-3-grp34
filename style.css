@@ -23,8 +23,15 @@ section.index:nth-of-type(1) {
   justify-content: center;
   background-image: url("img/bc.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
   color: white;
   min-height: 700px;
+}
+@media screen and (max-width: 800px) {
+  section.index:nth-of-type(1) {
+    background-position-x: 27%;
+  }
 }
 section.index:nth-of-type(1) ul {
   padding: 2rem 0;
@@ -53,6 +60,12 @@ section.index:nth-of-type(2) .div-conf {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 800px) {
+  section.index:nth-of-type(2) .div-conf {
+    width: 45%;
+  }
 }
 section.index:nth-of-type(2) .div-conf:nth-of-type(1) {
   top: 75px;
@@ -181,7 +194,7 @@ header {
 
 nav {
   display: none;
-  width: 25%;
+  width: 15%;
 }
 @media screen and (max-width: 1024px) {
   nav {
@@ -191,15 +204,15 @@ nav {
 
 .open {
   z-index: 1000;
-  width: 4rem;
+  width: 2rem;
 }
 .open .burger-open ul {
-  height: 0.5rem;
+  height: 0.25rem;
   width: 100%;
   background-color: black;
 }
 .open .burger-open a :nth-child(1), .open .burger-open a :nth-child(2) {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.25em;
 }
 
 .link-page {
@@ -227,8 +240,8 @@ nav {
   border-bottom: 1px solid black;
 }
 .close .burger-close img {
-  height: 4rem;
-  width: 4rem;
+  width: 2rem;
+  height: auto;
 }
 .close .burger-close a {
   padding: 0.75rem;
@@ -262,12 +275,8 @@ nav {
 @media screen and (max-width: 800px) {
   .logo-header {
     justify-content: center;
+    height: 1.5rem;
   }
-}
-.logo-header .logo {
-  height: 100%;
-  background-color: white;
-  width: 8rem;
 }
 
 .btn-inscription {
@@ -530,6 +539,7 @@ section.contact:nth-of-type(1) .left-contact form .champ {
   border: 1px solid #707070;
   resize: none;
   color: #928888;
+  padding: 0.75rem 0.5rem;
 }
 section.contact:nth-of-type(1) .left-contact .message {
   margin-top: 0;
@@ -542,12 +552,13 @@ section.contact:nth-of-type(1) .left-contact .submit {
 section.contact:nth-of-type(1) .right-contact {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 50%;
   margin-left: 5%;
 }
 @media screen and (max-width: 1024px) {
   section.contact:nth-of-type(1) .right-contact {
     margin-left: 0;
+    width: 90%;
   }
 }
 section.contact:nth-of-type(1) .right-contact .info-contact {
@@ -558,12 +569,12 @@ section.contact:nth-of-type(1) .right-contact .info-contact {
   width: 50%;
   height: auto;
 }
-@media screen and (max-width: 1024px) {
-  section.contact:nth-of-type(1) .right-contact .info-contact {
-    width: 50%;
-  }
+section.contact:nth-of-type(1) .right-contact .info-contact .contact-sm a :nth-child(1) {
+  width: 25px;
 }
 section.contact:nth-of-type(1) .right-contact .info-contact ul {
+  display: flex;
+  flex-direction: column;
   padding: 1.2rem 0;
 }
 section.contact:nth-of-type(1) .right-contact .info-contact ul span {
@@ -585,12 +596,12 @@ section.contact:nth-of-type(1) .right-contact .info-contact ul li {
   }
 }
 section.contact:nth-of-type(1) .right-contact .map-contact {
-  width: auto;
+  width: 50%;
 }
 @media screen and (max-width: 1024px) {
   section.contact:nth-of-type(1) .right-contact .map-contact {
     width: 50%;
-    height: 50%;
+    height: auto;
   }
 }
 section.contact:nth-of-type(1) .right-contact .map-contact img {

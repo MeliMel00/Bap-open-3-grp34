@@ -1,4 +1,4 @@
-
+@import  "../mixins/mixins";
 body{
     top: 0;
 }
@@ -21,8 +21,13 @@ section.index:nth-of-type(1) {
     justify-content: center;
     background-image: url("img/bc.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
     color: white;
     min-height: 700px;
+    @include xs {
+        background-position-x: +27%;
+    }
   ul {
       padding: 2rem 0;
       width:300px ;
@@ -50,6 +55,10 @@ section.index:nth-of-type(2){
         display: flex;
         flex-direction: column;
         position: relative;
+        padding-bottom: 2rem;
+        @include xs{
+            width: 45%;
+        }
 
     }
     .div-conf:nth-of-type(1){
@@ -94,6 +103,7 @@ section.index:nth-of-type(3){
         height: auto;
         width: 40%;
         z-index: 5000;
+        
     }
     .card-hackaton-2{
         position: relative;
