@@ -691,4 +691,29 @@ section.contact:nth-of-type(2) .newsletter {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.user {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+.user .one {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.user .two {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+.user .three {
+  grid-column: 4/6;
+  grid-row: 1;
+}
+
+.listeh2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */
