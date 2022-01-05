@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Admin</title>
 </head>
+    <body>
+
+    <?php
+    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] == "1") // Si le mot de passe est bon
+    {
+    // On affiche les codes
+    ?>
+
+
+
+
 
 <body>
 
@@ -17,7 +28,7 @@
         include 'header.php';
         
     ?>
-    
+
         <h2 class="listeh2">Liste de tout les participants</h2>
 
 
@@ -58,3 +69,17 @@ $request = $bdd->query('SELECT * FROM user ORDER BY id DESC');
 
 
     
+    <?php
+    }
+
+
+    
+    else // sinon, on affiche un message d'erreur
+    {
+        echo '<p>Mot de passe incorrect</p>';
+    }
+    ?>
+
+
+    </body>
+</html>
