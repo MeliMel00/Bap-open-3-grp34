@@ -15,6 +15,12 @@ section {
 .title-sect {
   font-size: 2rem;
   text-decoration: underline;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .title-sect {
+    text-align: center;
+  }
 }
 
 section.index:nth-of-type(1) {
@@ -35,7 +41,15 @@ section.index:nth-of-type(1) {
 }
 section.index:nth-of-type(1) ul {
   padding: 2rem 0;
-  width: 300px;
+  max-width: 90%;
+}
+section.index:nth-of-type(1) p {
+  max-width: 40%;
+}
+@media screen and (max-width: 1024px) {
+  section.index:nth-of-type(1) p {
+    max-width: 90%;
+  }
 }
 section.index:nth-of-type(1) .btn-inscription {
   background-color: #757575;
@@ -101,14 +115,20 @@ section.index:nth-of-type(3) .card-sect-ul {
 }
 section.index:nth-of-type(3) .card-hackaton-1 {
   position: relative;
-  left: 30px;
+  left: 5%;
   height: auto;
   width: 40%;
   z-index: 5000;
 }
+@media screen and (max-width: 1024px) {
+  section.index:nth-of-type(3) .card-hackaton-1 {
+    left: 5%;
+    width: 45%;
+  }
+}
 section.index:nth-of-type(3) .card-hackaton-2 {
   position: relative;
-  right: 30px;
+  right: 5%;
   height: auto;
   width: 40%;
   background-color: white;
@@ -116,12 +136,28 @@ section.index:nth-of-type(3) .card-hackaton-2 {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  section.index:nth-of-type(3) .card-hackaton-2 {
+    width: 60%;
+  }
+}
 section.index:nth-of-type(3) .card-hackaton-2 ul:nth-child(1) {
   padding: 2rem 0 2rem 0;
   line-height: 3rem;
 }
+@media screen and (max-width: 450px) {
+  section.index:nth-of-type(3) .card-hackaton-2 ul:nth-child(1) {
+    padding: 0.5rem 0 0.5rem 0;
+    line-height: 1.5rem;
+  }
+}
 section.index:nth-of-type(3) .card-hackaton-2 ul:nth-child(2) {
   padding: 2rem 2rem 2rem 0;
+}
+@media screen and (max-width: 450px) {
+  section.index:nth-of-type(3) .card-hackaton-2 ul:nth-child(2) {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
 }
 section.index:nth-of-type(3) .card-hackaton-2 ul {
   margin-left: auto;
@@ -143,6 +179,12 @@ section.index:nth-of-type(4) p {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 800px) {
+  section.index:nth-of-type(4) p {
+    width: 90%;
+  }
 }
 section.index:nth-of-type(4) .newsletter {
   display: flex;
@@ -150,6 +192,11 @@ section.index:nth-of-type(4) .newsletter {
   width: 35%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 800px) {
+  section.index:nth-of-type(4) .newsletter {
+    width: 90%;
+  }
 }
 section.index:nth-of-type(4) .newsletter input, section.index:nth-of-type(4) .newsletter button {
   padding: 1rem 1rem;
@@ -181,7 +228,7 @@ section.index:nth-of-type(4) .newsletter button:hover {
 
 header {
   width: auto;
-  background-color: #555454;
+  background-color: #0E0034;
   height: 12vh;
   display: flex;
   flex-direction: row;
@@ -189,12 +236,6 @@ header {
   justify-content: space-between;
   padding: 0 5%;
 }
-@media screen and (max-width: 1024px) {
-  header {
-    background-color: yellow;
-  }
-}
-
 nav {
   display: none;
   width: 15%;
@@ -212,7 +253,7 @@ nav {
 .open .burger-open ul {
   height: 0.25rem;
   width: 100%;
-  background-color: black;
+  background-color: white;
 }
 .open .burger-open a :nth-child(1), .open .burger-open a :nth-child(2) {
   margin-bottom: 0.25em;
@@ -242,15 +283,17 @@ nav {
   width: 100%;
   border-bottom: 1px solid black;
 }
+.close .burger-close a:nth-of-type(2) {
+  padding: 1rem 0;
+  margin-left: 6.5rem;
+  width: 75%;
+}
 .close .burger-close img {
   width: 2rem;
   height: auto;
-}
-.close .burger-close a {
-  padding: 0.75rem;
-}
-.close .burger-close p {
-  width: auto;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
 }
 .close :last-child ul {
   border-bottom: none;
@@ -259,15 +302,13 @@ nav {
   border-bottom: 1px solid black;
   padding: 1rem 0;
 }
+.close ul p {
+  width: max-content;
+  margin-left: 6.5rem;
+}
 .close ul .sub-title {
   display: none;
   padding: 1rem 0;
-}
-.close ul .sub-title p {
-  margin-left: 6.25rem;
-}
-.close ul p {
-  margin-left: 6.25rem;
 }
 
 .logo-header {
@@ -275,7 +316,7 @@ nav {
   height: 3rem;
   display: flex;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .logo-header {
     justify-content: center;
     height: 1.5rem;
@@ -285,7 +326,7 @@ nav {
 .btn-inscription {
   display: flex;
   padding: 1rem 2rem;
-  background-color: white;
+  background-color: #A03636;
   border-radius: 5rem;
   align-items: center;
   justify-content: center;
@@ -293,14 +334,19 @@ nav {
 .btn-inscription a {
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 11px;
+}
+@media screen and (max-width: 450px) {
+  .btn-inscription {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .link-desc {
   display: flex;
   padding: 1rem 2rem;
+  color: white;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .link-desc {
     display: none;
   }
@@ -514,6 +560,7 @@ section.contact:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: black;
   }
 }
 section.contact:nth-of-type(1) h2 {
@@ -529,7 +576,7 @@ section.contact:nth-of-type(1) .left-contact {
 }
 @media screen and (max-width: 1024px) {
   section.contact:nth-of-type(1) .left-contact {
-    width: 90%;
+    width: 100%;
   }
 }
 section.contact:nth-of-type(1) .left-contact form {
@@ -552,6 +599,11 @@ section.contact:nth-of-type(1) .left-contact .submit {
   width: 40%;
   border-radius: 1rem;
 }
+@media screen and (max-width: 800px) {
+  section.contact:nth-of-type(1) .left-contact .submit {
+    width: 60%;
+  }
+}
 section.contact:nth-of-type(1) .right-contact {
   display: flex;
   flex-direction: row;
@@ -561,7 +613,12 @@ section.contact:nth-of-type(1) .right-contact {
 @media screen and (max-width: 1024px) {
   section.contact:nth-of-type(1) .right-contact {
     margin-left: 0;
-    width: 90%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.contact:nth-of-type(1) .right-contact {
+    flex-direction: column;
   }
 }
 section.contact:nth-of-type(1) .right-contact .info-contact {
@@ -572,38 +629,50 @@ section.contact:nth-of-type(1) .right-contact .info-contact {
   width: 50%;
   height: auto;
 }
+@media screen and (max-width: 800px) {
+  section.contact:nth-of-type(1) .right-contact .info-contact {
+    width: 100%;
+  }
+}
 section.contact:nth-of-type(1) .right-contact .info-contact .contact-sm a :nth-child(1) {
-  width: 25px;
+  width: 55px;
 }
 section.contact:nth-of-type(1) .right-contact .info-contact ul {
   display: flex;
   flex-direction: column;
   padding: 1.2rem 0;
 }
+@media screen and (max-width: 800px) {
+  section.contact:nth-of-type(1) .right-contact .info-contact ul {
+    padding: 0.5rem 0;
+  }
+}
 section.contact:nth-of-type(1) .right-contact .info-contact ul span {
   font-size: 1.5em;
-  padding: 0 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   section.contact:nth-of-type(1) .right-contact .info-contact ul span {
     font-size: 1rem;
+    padding: 0.5rem;
   }
 }
 section.contact:nth-of-type(1) .right-contact .info-contact ul li {
   font-size: 1.5rem;
-  padding: 0 2.5rem;
+  padding: 0.5rem 2.5rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   section.contact:nth-of-type(1) .right-contact .info-contact ul li {
     font-size: 1rem;
+    padding: 0 1rem;
   }
 }
 section.contact:nth-of-type(1) .right-contact .map-contact {
   width: 50%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
   section.contact:nth-of-type(1) .right-contact .map-contact {
-    width: 50%;
+    width: 100%;
     height: auto;
   }
 }
@@ -611,6 +680,11 @@ section.contact:nth-of-type(1) .right-contact .map-contact img {
   width: 100%;
   height: 100%;
 }
+
+section.contact:nth-of-type(2) .newsletter {
+  padding-top: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;

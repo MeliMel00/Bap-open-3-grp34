@@ -13,6 +13,10 @@ section {
 .title-sect {
     font-size: 2rem;
     text-decoration: underline;
+    padding-bottom: 2rem;
+    @include xs {
+        text-align: center;
+    }
 }
 
 section.index:nth-of-type(1) {
@@ -30,8 +34,15 @@ section.index:nth-of-type(1) {
     }
   ul {
       padding: 2rem 0;
-      width:300px ;
+      max-width: 90%;
   }
+  p{
+      max-width: 40%;
+      @include s {
+        max-width: 90%;
+    }
+  }
+  
   .btn-inscription{
       background-color: #757575;
       width: 5rem;
@@ -99,28 +110,42 @@ section.index:nth-of-type(3){
     
     .card-hackaton-1{
         position: relative;
-        left: 30px;
+        left: 5%;
         height: auto;
         width: 40%;
         z-index: 5000;
+        @include s {
+            left: 5%;
+            width: 45%;
+        }
         
     }
     .card-hackaton-2{
         position: relative;
-        right: 30px;
+        right: 5%;
         height: auto;
         width: 40%;
         background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @include s {
+            width: 60%;
+        }
         
         ul:nth-child(1){
             padding: 2rem 0 2rem 0;
             line-height: 3rem;
+            @include xxs {
+                padding: 0.5rem 0 0.5rem 0;
+                line-height: 1.5rem;
+            }
         }
         ul:nth-child(2){
             padding: 2rem 2rem 2rem 0;
+            @include xxs {
+                padding: 0.5rem 0.5rem 0.5rem 0;
+            }
         }
         ul{
             margin-left: auto;
@@ -144,6 +169,10 @@ section.index:nth-of-type(4){
         width: 40%;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 2rem;
+        @include xs {
+            width: 90%;
+        }
     }
     .newsletter{
         display: flex;
@@ -151,6 +180,9 @@ section.index:nth-of-type(4){
         width: 35%;
         margin-left: auto;
         margin-right: auto;
+        @include xs {
+            width: 90%;
+        }
 
         input, button {
             padding: 1rem 1rem;

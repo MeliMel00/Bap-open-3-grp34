@@ -1,7 +1,7 @@
 @import  "../mixins/mixins";
 header{
     width: auto;
-    background-color: rgb(85, 84, 84);
+    background-color: #0E0034;
     height: 12vh;
     display: flex;
     flex-direction: row;
@@ -10,7 +10,7 @@ header{
     // justify-content: center;
     padding: 0 5%;
     @include s {
-        background-color: yellow;
+        
     }
 }
 nav {
@@ -29,7 +29,7 @@ nav {
         
             height: 0.25rem;
             width: 100%;
-            background-color: black;
+            background-color: white;
         }
         a{
             :nth-child(1), :nth-child(2){
@@ -59,16 +59,20 @@ nav {
         align-items: center;
         width: 100%;
         border-bottom: 1px solid black;
+        
+        a:nth-of-type(2){
+            padding: 1rem 0;
+            margin-left: 6.5rem;
+            width: 75%;
+        }
         img{
             width: 2rem;
             height: auto;
+            position: absolute;
+            top: 0.5rem;
+            left: 1rem;
         }
-        a{
-            padding: 0.75rem;
-        }
-        p {
-            width: auto;
-        }
+        
        
     }
     :last-child{
@@ -79,19 +83,14 @@ nav {
     ul{
         border-bottom: 1px solid black;
         padding: 1rem 0;
+        p{
+            width: max-content;
+            margin-left: 6.5rem;
+        }
         .sub-title{
             display: none;
             padding: 1rem 0;
             
-            p{
-                
-            
-                margin-left: 6.25rem;
-            
-            }
-        }
-        p{
-            margin-left: 6.25rem;
         }
     }
 }
@@ -101,7 +100,7 @@ nav {
     width: 8rem;
     height: 3rem;
     display: flex;
-    @include xs {
+    @include s {
         justify-content: center;
         height: 1.5rem;
     }
@@ -111,21 +110,24 @@ nav {
 .btn-inscription{
     display: flex;
     padding: 1rem 2rem;
-    background-color: white;
+    background-color: #A03636;
     border-radius: 5rem;
     align-items: center;
     justify-content: center;
     a{
         text-transform: uppercase;
         font-weight: bolder;
-        font-size: 11px;
+    }
+    @include xxs {
+        padding: 0.5rem 1rem;
     }
 }
 
 .link-desc {
     display: flex;
     padding: 1rem 2rem;
-    @include xs {
+    color: white;
+    @include s {
         display: none;
     }
 }

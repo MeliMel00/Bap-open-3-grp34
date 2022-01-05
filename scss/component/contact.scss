@@ -7,7 +7,9 @@ section.contact:nth-of-type(1) {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background: black;
     }
+    
     h2{
         font-size: 2rem;
         color: white;
@@ -19,7 +21,7 @@ section.contact:nth-of-type(1) {
         flex-direction: column;
         justify-content: center;
         @include s{
-            width: 90%;
+            width: 100%;
         }
         form {
             display: flex;
@@ -40,6 +42,9 @@ section.contact:nth-of-type(1) {
         .submit {
             width: 40%;
             border-radius: 1rem;
+            @include xs {
+                width: 60%;
+            }
         }
     }
     .right-contact{
@@ -49,7 +54,10 @@ section.contact:nth-of-type(1) {
         margin-left: 5%;
         @include s{
             margin-left: 0;
-            width: 90%;
+            width: 100%;
+        }
+        @include xs {
+            flex-direction: column;
         }
         .info-contact{
             display: flex;
@@ -58,13 +66,13 @@ section.contact:nth-of-type(1) {
             background-color: white;
             width: 50%;
             height: auto;
-            // @include s{
-            //     width: 50%;
-            // }
+            @include xs{
+                width: 100%;
+            }
            .contact-sm{
               a{
                  :nth-child(1){
-                    width: 25px;
+                    width: 55px;
                  }
               }
            }
@@ -72,26 +80,31 @@ section.contact:nth-of-type(1) {
                 display: flex;
                 flex-direction: column;
                 padding:1.2rem 0;
+                @include xs {
+                    padding: 0.5rem 0;
+                }
                 span{    
                     font-size: 1.5em;
-                    padding: 0 1.5rem;
-                    @include s{
+                    padding: 0.5rem 1.5rem;
+                    @include xs{
                         font-size: 1rem;
+                        padding: 0.5rem;
                     }
                 }
                 li{  
                     font-size: 1.5rem;
-                    padding: 0 2.5rem;
-                    @include s{
+                    padding: 0.5rem 2.5rem;
+                    @include xs{
                         font-size: 1rem;
+                        padding: 0 1rem;
                     }
                 }
             }
         }
         .map-contact{
             width: 50%;
-            @include s{
-                width: 50%;
+            @include xs{
+                width: 100%;
                 height: auto;
                 
             }
@@ -101,11 +114,12 @@ section.contact:nth-of-type(1) {
             height: 100%;
             
         }
-        .incon-sm{
-            :nth-child(n+1){
-                // width: 10px;
-                // height: auto;
-            }
-        }
+        
+    }
+   
+}
+section.contact:nth-of-type(2){
+    .newsletter {
+        padding-top: 2rem;
     }
 }
