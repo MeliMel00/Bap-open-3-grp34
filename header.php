@@ -12,7 +12,7 @@
             </div>
             <div class="close">
                 <div class="burger-close close-div">
-                    <img src="./img/times-solid.svg" alt="">
+                    <img src="./img/times-solid.svg" alt=""></a>
                     <p >FERMER</p>
                 </div>
                 <a href="index.php">
@@ -36,7 +36,7 @@
                     </ul>
                 </a>
                 <a href="#" class="conférence">
-                    <ul>
+                    <ul style="border: none">
                         <p>Conférence</p>
                         </a>
                         <li class="sub-title">

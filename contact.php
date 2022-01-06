@@ -17,7 +17,7 @@
         <div class="left-contact">
             <h2 class="title-contact">Contactez-Nous !</h2>
             <div class="contact-form">
-                <form method="POST">
+                <form action="https://formsubmit.co/open3devinci@hotmail.com" method="POST">>
 
                     <input class="champ" type="text" name="Nom" placeholder="Nom" Required>
                     <input class="champ" type="text" name="Prenom" placeholder="Prénom" Required>
@@ -26,6 +26,7 @@
                     <input class="submit champ" type="submit" name="submit" value="Soumettre" class="btn-envoyer">
 
                 </form>
+                
             </div>
         </div>
         <div class="right-contact">
@@ -39,7 +40,7 @@
                     <li>02 15 62 43 82</li>
                     <li>02 15 62 43 82</li>
                 </ul>
-                <ul class="contact-sm">
+                <ul class="contact-sm"> 
                     <span>Réseaux</span>
                     <span>
                         <a href="#">
@@ -74,7 +75,7 @@
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente commodi ullam saepe iure soluta nam totam omnis sunt rerum odio in vero quasi, maxime incidunt, eius pariatur rem repellat deleniti.</p>
         <div class="newsletter">
-            <input type="text" placeholder="Votre Email">
+            <input type="text" placeholder="Votre Email" class="email-contact">
             <button type="submit"><i class="fas fa-chevron-right"></i></button>
         </div> 
     </section>

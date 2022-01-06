@@ -52,12 +52,14 @@ section.contact:nth-of-type(1) {
         flex-direction: row;
         width: 50%;
         margin-left: 5%;
+        height: auto;
         @include s{
             margin-left: 0;
             width: 100%;
+            justify-content: center;
         }
         @include xs {
-            flex-direction: column;
+            flex-direction: row;
         }
         .info-contact{
             display: flex;
@@ -67,12 +69,16 @@ section.contact:nth-of-type(1) {
             width: 50%;
             height: auto;
             @include xs{
-                width: 100%;
+                width: 35%;
             }
            .contact-sm{
               a{
                  :nth-child(1){
                     width: 55px;
+                    @include xxs{
+                        width: 30px;
+                        height: auto;
+                    }
                  }
               }
            }
@@ -86,7 +92,7 @@ section.contact:nth-of-type(1) {
                 span{    
                     font-size: 1.5em;
                     padding: 0.5rem 1.5rem;
-                    @include xs{
+                    @include xxs{
                         font-size: 1rem;
                         padding: 0.5rem;
                     }
@@ -94,9 +100,9 @@ section.contact:nth-of-type(1) {
                 li{  
                     font-size: 1.5rem;
                     padding: 0.5rem 2.5rem;
-                    @include xs{
-                        font-size: 1rem;
-                        padding: 0 1rem;
+                    @include xxs{
+                        font-size: 0.75rem;
+                        padding: 0 0.5rem;
                     }
                 }
             }
@@ -104,14 +110,17 @@ section.contact:nth-of-type(1) {
         .map-contact{
             width: 50%;
             @include xs{
-                width: 100%;
+                width: 60%;
                 height: auto;
-                
             }
         }
         .map-contact img{
             width: 100%;
             height: 100%;
+            @include xs{
+                height: 100%;
+                width: 100%;
+            }
             
         }
         
@@ -119,7 +128,32 @@ section.contact:nth-of-type(1) {
    
 }
 section.contact:nth-of-type(2){
-    .newsletter {
-        padding-top: 2rem;
+    .newsletter{
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        margin-top: 2rem;
+        @include xs {
+            width: 90%;
+        }
+
+        input, button {
+            padding: 1rem 1rem;
+            border: 1px solid #ebebeb;
+        }
+        input {
+            width: 90%;
+            color: #1a1a1a;
+        }
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            :nth-child(1){
+                opacity: 50%;
+            }
+        }
+        button:hover{
+            background-color: #993E90;
+        }
     }
 }

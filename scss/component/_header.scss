@@ -49,14 +49,15 @@ nav {
     left: 0;
     z-index: 5000;
     border-radius: 0 0 4em 0 ;
-    border:  1px solid black;
+    border:  1px solid rgb(92, 92, 92);
     background-color: white;
     .burger-close {
         display: inline-flex;
         align-items: center;
         width: 100%;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(92, 92, 92);
         height: 8vh;
+        
         p{
             width: 100%;
             margin-left: 25%;
@@ -71,13 +72,10 @@ nav {
         
        
     }
-    :last-child{
-        ul{
-            border-bottom: none;
-        }
-    }
+   
+
     ul{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(92, 92, 92);
         padding: 1rem 0;
         p{
             width: 75%;
@@ -90,6 +88,9 @@ nav {
             height: 0;
             
         }
+    }
+    ul:nth-last-of-type(){
+        border-bottom: none !important;
     }
 }
 

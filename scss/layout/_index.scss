@@ -137,6 +137,7 @@ section.index:nth-of-type(3){
         ul:nth-child(1){
             padding: 2rem 0 2rem 0;
             line-height: 3rem;
+            
             @include xxs {
                 padding: 0.5rem 0 0.5rem 0;
                 line-height: 1.5rem;
@@ -151,11 +152,21 @@ section.index:nth-of-type(3){
         ul{
             margin-left: auto;
             width: 66%;
+            li{
+                font-size: 1.5rem;
+                @include xxs{
+                    font-size: 1rem;
+                }
+            }
         }
         
         .more-info {
             float: right;
             text-decoration: underline;
+            font-size: 1.5rem;
+            @include xxs{
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -176,11 +187,12 @@ section.index:nth-of-type(4){
         }
     }
     .newsletter{
-        display: flex;
-        flex-direction: row;
-        width: 35%;
-        margin-left: auto;
-        margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            width: 35%;
+            margin-left: auto;
+            margin-right: auto;
+        
         @include xs {
             width: 90%;
         }

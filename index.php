@@ -93,6 +93,7 @@
         <div class="newsletter">
             <input type="text" placeholder="Votre Email">
             <button type="submit"><i class="fas fa-chevron-right"></i></button>
+           
         </div> 
     </section>
         <?php
