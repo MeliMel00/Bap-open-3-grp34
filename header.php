@@ -35,25 +35,21 @@
                         <p>Inscription</p>
                     </ul>
                 </a>
-                <a href="#">
+                <a href="#" class="conférence">
                     <ul>
                         <p>Conférence</p>
-                    </ul>
-                </a>
-                <a href="#" class="histoire">
-                    <ul>
-                        <p>TITRE</p>
+                        </a>
                         <li class="sub-title">
-                            <p>HELLO</p>
+                            <a href=""><p>Jour 1</p></a>
                         </li>
                         <li class="sub-title">
-                            <p>HELLO</p>
+                            <a href=""><p>Jour 2</p></a>
                         </li>
                         <li class="sub-title">
-                            <p>HELLO</p>
+                            <a href=""><p>Jour 3</p></a>
                         </li>
                     </ul>
-                </a>
+                
             </div>
         </div>
     </nav>

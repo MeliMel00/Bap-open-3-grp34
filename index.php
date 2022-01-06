@@ -24,7 +24,7 @@
             <h2 class="title-sect">Programme de OPEN 3</h2>
         </ul>
         <ul>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, odit harum aliquid deserunt maxime temporibus facere aliquam doloremque consequatur illum cumque pariatur incidunt unde amet debitis ea! Enim, esse. Nemo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, odit harum aliquid deserunt maxime temporibus facere aliquam doloremque consequatur illum cumque pariatur incidunt unde amet debitis ea! Enim, esse. Nemo?</p>
+        <p class="desc-progr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, odit harum aliquid deserunt maxime temporibus facere aliquam doloremque consequatur illum cumque pariatur incidunt unde amet debitis ea! Enim, esse. Nemo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, odit harum aliquid deserunt maxime temporibus facere aliquam doloremque consequatur illum cumque pariatur incidunt unde amet debitis ea! Enim, esse. Nemo?</p>
         </ul>
         <ul>
         <a href="inscription.php">
@@ -79,7 +79,7 @@
                     <li>Lieu: IIM</li>
                 </ul>
                 <ul>
-                    <a href="#">Plus</a>
+                    <div class="more-info" style="cursor:pointer">Plus</div>
                 </ul>
             </div>
         </ul>

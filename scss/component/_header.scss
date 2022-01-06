@@ -2,7 +2,7 @@
 header{
     width: auto;
     background-color: #0E0034;
-    height: 12vh;
+    height: 8vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,6 +42,7 @@ nav {
     display: inline-flex;
 }
 .close{
+    opacity: 0;
     width: 75%;
     min-height: 75vh;
     padding-bottom: 5vh;
@@ -59,7 +60,7 @@ nav {
         align-items: center;
         width: 100%;
         border-bottom: 1px solid black;
-        
+        height: 8vh;
         a:nth-of-type(2){
             padding: 1rem 0;
             margin-left: 6.5rem;
@@ -69,7 +70,7 @@ nav {
             width: 2rem;
             height: auto;
             position: absolute;
-            top: 0.5rem;
+            top: 1rem;
             left: 1rem;
         }
         

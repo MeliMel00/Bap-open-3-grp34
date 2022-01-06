@@ -1,15 +1,34 @@
 $( ".burger-open" ).click(function() {
-    $(".close").css("display","block")
+    $( ".close" ).animate({
+        opacity: 1,
+        display: "block",
+        height: "toggle"
+      }, "slow", function() {
+      });
   });
+
 $( ".close-div" ).click(function() {
-    $(".close").css("display","none")
+   $( ".close" ).animate({
+        opacity: 0,
+        display: "none",
+        height: "toggle"
+      }, "slow", function() {
+      });
 });
 
-$( ".histoire" ).click(function() {
+$( ".conférence" ).click(function() {
     if($(".sub-title").is(":hidden")){
-        $(".sub-title").css("display","block")
+        $( ".sub-title" ).animate({
+            display: "block",
+            height: "toggle"
+          }, "slow", function() {
+          });
     }
    else{
-        $(".sub-title").css("display","none")
+    $( ".sub-title" ).animate({
+        display: "none",
+        height: "toggle"
+      }, "slow", function() {
+      });
    }
 });

@@ -43,18 +43,16 @@ section.index:nth-of-type(1) ul {
   padding: 2rem 0;
   max-width: 90%;
 }
-section.index:nth-of-type(1) p {
+section.index:nth-of-type(1) .desc-progr {
   max-width: 40%;
 }
 @media screen and (max-width: 1024px) {
-  section.index:nth-of-type(1) p {
+  section.index:nth-of-type(1) .desc-progr {
     max-width: 90%;
   }
 }
 section.index:nth-of-type(1) .btn-inscription {
-  background-color: #757575;
   width: 5rem;
-  color: white;
 }
 
 section.index:nth-of-type(2) {
@@ -102,6 +100,7 @@ section.index:nth-of-type(2) .text-conf :nth-child(1) {
 section.index:nth-of-type(2) .text-conf :nth-last-child(1) {
   float: right;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 section.index:nth-of-type(3) {
@@ -163,7 +162,7 @@ section.index:nth-of-type(3) .card-hackaton-2 ul {
   margin-left: auto;
   width: 66%;
 }
-section.index:nth-of-type(3) .card-hackaton-2 a {
+section.index:nth-of-type(3) .card-hackaton-2 .more-info {
   float: right;
   text-decoration: underline;
 }
@@ -229,7 +228,7 @@ section.index:nth-of-type(4) .newsletter button:hover {
 header {
   width: auto;
   background-color: #0E0034;
-  height: 12vh;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -264,6 +263,7 @@ nav {
 }
 
 .close {
+  opacity: 0;
   width: 75%;
   min-height: 75vh;
   padding-bottom: 5vh;
@@ -282,6 +282,7 @@ nav {
   align-items: center;
   width: 100%;
   border-bottom: 1px solid black;
+  height: 8vh;
 }
 .close .burger-close a:nth-of-type(2) {
   padding: 1rem 0;
@@ -292,7 +293,7 @@ nav {
   width: 2rem;
   height: auto;
   position: absolute;
-  top: 0.5rem;
+  top: 1rem;
   left: 1rem;
 }
 .close :last-child ul {
@@ -353,14 +354,17 @@ nav {
 }
 
 footer {
-  background-color: gray;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100px;
 }
 footer :nth-child(2) {
   margin: 0 1rem;
+}
+footer a :nth-child(1) {
+  width: 25px;
 }
 
 .div-inscription {
@@ -449,6 +453,11 @@ footer :nth-child(2) {
   width: 60%;
   margin-bottom: 5%;
 }
+@media screen and (max-width: 450px) {
+  .about p {
+    width: 90%;
+  }
+}
 
 .black {
   background-color: #232323;
@@ -465,6 +474,12 @@ footer :nth-child(2) {
   font-size: 32px;
   margin-bottom: 10%;
 }
+@media screen and (max-width: 450px) {
+  .section2 h2 {
+    text-align: center;
+    margin-top: 10%;
+  }
+}
 .section2 p {
   font-size: 24px;
   margin-bottom: 5%;
@@ -474,9 +489,21 @@ footer :nth-child(2) {
   width: 50%;
   margin: 5% 5% 5% 10%;
 }
+@media screen and (max-width: 450px) {
+  .section2 .text {
+    margin: 0;
+    width: 90%;
+  }
+}
 .section2 .image {
   width: 40%;
   margin: 5% 10% 5% 5%;
+}
+@media screen and (max-width: 450px) {
+  .section2 .image {
+    margin: 0;
+    width: 90%;
+  }
 }
 .section2 .image .left {
   float: left;
@@ -491,6 +518,11 @@ footer :nth-child(2) {
 .section2 .image .bottom {
   width: 100%;
   margin-top: 4%;
+}
+@media screen and (max-width: 450px) {
+  .section2 {
+    flex-direction: column !important;
+  }
 }
 
 .equipe {
@@ -507,12 +539,17 @@ footer :nth-child(2) {
 .equipe .image {
   margin: 8% 0 5% 0;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 .equipe .image div {
   width: 15%;
   height: auto;
   margin: auto;
+}
+@media screen and (max-width: 450px) {
+  .equipe .image div {
+    width: 40%;
+  }
 }
 .equipe .image div p {
   margin: 5%;

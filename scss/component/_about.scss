@@ -1,3 +1,4 @@
+@import  "../mixins/mixins";
 .about{
 
     text-align: center;
@@ -16,6 +17,9 @@
         font-size: 24px;
         width: 60%;
         margin-bottom: 5%;
+        @include xxs{
+            width: 90%;
+        }
     }
 }
 
@@ -31,10 +35,13 @@
 }
 
 .section2{
-
     h2{
         font-size: 32px;
         margin-bottom: 10%;
+        @include xxs{
+            text-align: center;
+            margin-top: 10%;
+        }
     }
 
     p{
@@ -46,12 +53,19 @@
     .text{
         width: 50%;
         margin: 5% 5% 5% 10%;
+        @include xxs{
+            margin: 0;
+            width: 90%;
+        }
     }
 
     .image{
         width: 40%;
         margin: 5% 10% 5% 5%;
-
+        @include xxs{
+            margin: 0;
+            width: 90%;
+        }
         .left{
             float: left;
             width: 48%;
@@ -69,6 +83,9 @@
             margin-top: 4%;
         }
 
+    }
+    @include xxs{
+        flex-direction: column !important;
     }
 }
 
@@ -89,13 +106,15 @@
     .image{
         margin: 8% 0 5% 0;
         display: flex;
-        flex-direction: row;
-
+        flex-wrap: wrap;
+        
         div{
             width: 15%;
             height: auto;
             margin: auto;
-
+            @include xxs {
+                width: 40%;
+            }
             p{
                 margin: 5%;
                 padding: 0;

@@ -22,7 +22,7 @@
 
     ?>
 
-    <a href="index.php">RETOUR RETOUR RETOUR RETOUR RETOUR</a>
+    <a href="index.php">RETOUR</a>
 
 
 
