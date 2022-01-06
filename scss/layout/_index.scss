@@ -14,7 +14,7 @@ section {
     font-size: 2rem;
     text-decoration: underline;
     padding-bottom: 2rem;
-    @include xs {
+    @include xxs {
         text-align: center;
     }
 }

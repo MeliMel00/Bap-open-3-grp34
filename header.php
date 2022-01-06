@@ -11,9 +11,9 @@
                 </div>
             </div>
             <div class="close">
-                <div class="burger-close">
-                    <a href="#"><img src="./img/times-solid.svg" alt="" class="close-div"></a>
-                    <a href="#"><p class="close-div">FERMER</p></a>
+                <div class="burger-close close-div">
+                    <img src="./img/times-solid.svg" alt="">
+                    <p >FERMER</p>
                 </div>
                 <a href="index.php">
                     <ul>
