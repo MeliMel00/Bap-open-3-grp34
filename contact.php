@@ -23,6 +23,7 @@
                     <input class="champ" type="text" name="Prenom" placeholder="Prénom" Required>
                     <input class="champ" type="email" name="Mail" placeholder="Mail" Required>
                     <textarea name="comments" class="champ" id="comments" cols="20" rows="4" placeholder="Votre Message"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
                     <input class="submit champ" type="submit" name="submit" value="Soumettre" class="btn-envoyer">
 
                 </form>
