@@ -190,8 +190,7 @@ section.index:nth-of-type(4) {
 }
 section.index:nth-of-type(4) p {
   width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   padding-bottom: 2rem;
 }
 @media screen and (max-width: 800px) {
@@ -202,31 +201,15 @@ section.index:nth-of-type(4) p {
 section.index:nth-of-type(4) .newsletter {
   display: flex;
   flex-direction: row;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (max-width: 800px) {
-  section.index:nth-of-type(4) .newsletter {
-    width: 90%;
-  }
-}
-section.index:nth-of-type(4) .newsletter input, section.index:nth-of-type(4) .newsletter button {
-  padding: 1rem 1rem;
-  border: 1px solid #ebebeb;
-}
-section.index:nth-of-type(4) .newsletter input {
   width: 90%;
-  color: #1a1a1a;
+  justify-content: center;
 }
-section.index:nth-of-type(4) .newsletter button {
-  cursor: pointer;
-  background-color: transparent;
+section.index:nth-of-type(4) .newsletter a {
+  border: 1px solid #979797;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 }
-section.index:nth-of-type(4) .newsletter button :nth-child(1) {
-  opacity: 50%;
-}
-section.index:nth-of-type(4) .newsletter button:hover {
+section.index:nth-of-type(4) .newsletter a:hover {
   background-color: #993E90;
 }
 
@@ -240,7 +223,7 @@ section.index:nth-of-type(4) .newsletter button:hover {
 }
 
 header {
-  width: auto;
+  width: 90%;
   background-color: #0E0034;
   height: 8vh;
   display: flex;
@@ -248,6 +231,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
+  position: fixed;
+  z-index: 8000;
 }
 
 nav {
@@ -264,12 +249,15 @@ nav {
   z-index: 1000;
   width: 2rem;
 }
+.open .burger-open {
+  cursor: pointer;
+}
 .open .burger-open ul {
   height: 0.4vh;
   width: 100%;
   background-color: white;
 }
-.open .burger-open a :nth-child(1), .open .burger-open a :nth-child(2) {
+.open .burger-open .click-nav :nth-child(1), .open .burger-open .click-nav :nth-child(2) {
   margin-bottom: 0.4vh;
 }
 
@@ -459,6 +447,11 @@ footer a :nth-child(1) {
   align-items: center;
   color: black;
 }
+@media screen and (max-width: 1024px) {
+  .about {
+    padding-top: 6rem;
+  }
+}
 .about h2 {
   font-size: 32px;
   margin: 5%;
@@ -590,12 +583,20 @@ footer a :nth-child(1) {
 .lastsection .image {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 30%;
   margin-bottom: 5%;
 }
-.lastsection img {
-  margin: 2%;
-  width: 25%;
+@media screen and (max-width: 1024px) {
+  .lastsection .image {
+    width: 50%;
+  }
+}
+.lastsection .image img {
+  width: 100%;
+  height: auto;
+}
+.lastsection .image a:nth-of-type(2) {
+  margin: 0 5%;
 }
 .lastsection footer {
   background-color: #232323;
@@ -613,6 +614,7 @@ section.contact:nth-of-type(1) {
     flex-direction: column;
     align-items: center;
     background: black;
+    padding-top: 8rem;
   }
 }
 section.contact:nth-of-type(1) h2 {
@@ -717,6 +719,14 @@ section.contact:nth-of-type(1) .right-contact .info-contact ul span {
     padding: 0.5rem;
   }
 }
+section.contact:nth-of-type(1) .right-contact .info-contact ul span a:nth-of-type(2) {
+  margin: 0 5%;
+}
+@media screen and (max-width: 450px) {
+  section.contact:nth-of-type(1) .right-contact .info-contact ul span a:nth-of-type(2) {
+    margin: 0;
+  }
+}
 section.contact:nth-of-type(1) .right-contact .info-contact ul li {
   font-size: 1.5rem;
   padding: 0.5rem 2.5rem;
@@ -747,33 +757,35 @@ section.contact:nth-of-type(1) .right-contact .map-contact img {
   }
 }
 
-section.contact:nth-of-type(2) .newsletter {
+section.contact:nth-of-type(2) {
   display: flex;
-  flex-direction: row;
-  width: 35%;
-  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 200px;
+}
+section.contact:nth-of-type(2) p {
+  width: 40%;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 @media screen and (max-width: 800px) {
-  section.contact:nth-of-type(2) .newsletter {
+  section.contact:nth-of-type(2) p {
     width: 90%;
   }
 }
-section.contact:nth-of-type(2) .newsletter input, section.contact:nth-of-type(2) .newsletter button {
-  padding: 1rem 1rem;
-  border: 1px solid #ebebeb;
-}
-section.contact:nth-of-type(2) .newsletter input {
+section.contact:nth-of-type(2) .newsletter {
+  display: flex;
+  flex-direction: row;
   width: 90%;
-  color: #1a1a1a;
+  justify-content: center;
 }
-section.contact:nth-of-type(2) .newsletter button {
-  cursor: pointer;
-  background-color: transparent;
+section.contact:nth-of-type(2) .newsletter a {
+  border: 1px solid #979797;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 }
-section.contact:nth-of-type(2) .newsletter button :nth-child(1) {
-  opacity: 50%;
-}
-section.contact:nth-of-type(2) .newsletter button:hover {
+section.contact:nth-of-type(2) .newsletter a:hover {
   background-color: #993E90;
 }
 
