@@ -96,9 +96,9 @@
 
            
         <div class="image">
-            <a href="https://www.iim.fr/"><img src="img/iim.png" alt=""></a>
-            <a href="https://www.emlv.fr/"><img src="img/emlv.png" alt=""></a>
-            <a href="https://www.esilv.fr/"><img src="img/esilv.png" alt=""></a>
+            <a href="https://www.iim.fr/" target="_blank"><img src="img/iim.png" alt="logo_iim" ></a>
+            <a href="https://www.emlv.fr/" target="_blank"><img src="img/emlv.png" alt="logo_emlv" ></a>
+            <a href="https://www.esilv.fr/" target="_blank"><img src="img/esilv.png" alt="logo_esilv" ></a>
         </div>
         
 

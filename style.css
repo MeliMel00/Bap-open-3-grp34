@@ -374,7 +374,7 @@ footer a :nth-child(1) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0;
+  padding: 200px 0;
 }
 .div-inscription div {
   display: flex;
@@ -401,9 +401,10 @@ footer a :nth-child(1) {
   font-size: 16px;
   font-weight: 500;
   background: none;
-  border-radius: 0;
-  border-bottom: solid black 1px;
+  border-radius: 5px;
+  border: solid black 1px;
   margin: 5% 0;
+  box-shadow: 0px 0px 8px -3px #000000;
 }
 .div-inscription .btn-envoyer {
   width: 60%;
@@ -418,6 +419,13 @@ footer a :nth-child(1) {
 .div-inscription .btn-envoyer:active {
   color: gray;
   border: solid gray 1px;
+}
+
+.fa-chevron-left {
+  font-size: 50px;
+  margin-left: 25%;
+  margin-top: 8%;
+  position: absolute;
 }
 
 .success {
@@ -440,6 +448,7 @@ footer a :nth-child(1) {
 }
 
 .about {
+  padding: 150px 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -614,7 +623,6 @@ section.contact:nth-of-type(1) {
     flex-direction: column;
     align-items: center;
     background: black;
-    padding-top: 8rem;
   }
 }
 section.contact:nth-of-type(1) h2 {
@@ -637,21 +645,12 @@ section.contact:nth-of-type(1) .left-contact form {
   display: flex;
   flex-direction: column;
 }
-section.contact:nth-of-type(1) .left-contact form .champ {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #707070;
-  resize: none;
-  color: #928888;
-  padding: 0.75rem 0.5rem;
-}
 section.contact:nth-of-type(1) .left-contact .message {
   margin-top: 0;
   height: 5em;
 }
 section.contact:nth-of-type(1) .left-contact .submit {
   width: 40%;
-  border-radius: 1rem;
 }
 @media screen and (max-width: 800px) {
   section.contact:nth-of-type(1) .left-contact .submit {
@@ -787,6 +786,45 @@ section.contact:nth-of-type(2) .newsletter a {
 }
 section.contact:nth-of-type(2) .newsletter a:hover {
   background-color: #993E90;
+}
+
+.contact .champ {
+  width: 100%;
+  border: 0;
+  padding-left: 10px;
+  height: 54px;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  border-radius: 5px;
+  border: solid white 1px;
+  margin: 2% 0;
+  box-shadow: 0px 0px 8px -3px #ffffff;
+}
+.contact .btn-envoyer {
+  width: 60%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: white;
+  border: solid white 1px;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0;
+}
+.contact textarea {
+  height: 100px;
+  resize: none;
+  width: 100%;
+  border: 0;
+  padding: 10px 0 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background: white;
+  border-radius: 5px;
+  border: solid white 1px;
+  margin: 2% 0;
+  box-shadow: 0px 0px 8px -3px #ffffff;
 }
 
 * {
