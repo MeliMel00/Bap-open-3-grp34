@@ -166,3 +166,45 @@ section.contact:nth-of-type(2){
             }
     }
 }
+
+.contact{
+    .champ{
+        width: 100%;
+        border: 0;
+        padding-left: 10px;
+        height: 54px;
+        font-size: 20px;
+        font-weight: 500;
+        background: white;
+        border-radius: 5px;
+        border: solid rgb(255, 255, 255) 1px;
+        margin: 2% 0;
+        box-shadow: 0px 0px 8px -3px #ffffff;
+    }
+    
+    .btn-envoyer{
+        width: 60%;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        background: white;
+        border: solid rgb(255, 255, 255) 1px;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 0;
+    }
+    textarea{
+        height: 100px;
+        resize: none;
+        width: 100%;
+        border: 0;
+        padding: 10px 0 0 10px;
+        font-size: 16px;
+        font-weight: 500;
+        background: white;
+        border-radius: 5px;
+        border: solid rgb(255, 255, 255) 1px;
+        margin: 2% 0;
+        box-shadow: 0px 0px 8px -3px #ffffff;
+    }
+}
