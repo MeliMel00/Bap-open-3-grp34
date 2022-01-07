@@ -113,14 +113,24 @@ nav {
 .btn-inscription{
     display: flex;
     padding: 1rem 2rem;
-    background-color: #A03636;
-    border-radius: 5rem;
+    background-color: #A03636; 
+    border: #A03636 1px solid;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
+    color: white;
+
+    &:hover{
+        background: none;
+        color: white;
+        transition: 0.5s;
+    }
+
     a{
         text-transform: uppercase;
         font-weight: bolder;
     }
+
     @include xxs {
         padding: 0.5rem 1rem;
     }

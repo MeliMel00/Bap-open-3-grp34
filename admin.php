@@ -12,7 +12,7 @@
     <body>
 
     <?php
-    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] == "1") // Si le mot de passe est bon
+    if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] == "1234") // Si le mot de passe est bon
     {
     // On affiche les codes
     ?>
@@ -76,7 +76,7 @@ $request = $bdd->query('SELECT * FROM user ORDER BY id DESC');
     
     else // sinon, on affiche un message d'erreur
     {
-        echo '<p>Mot de passe incorrect</p>';
+        header('location:code.php');
     }
     ?>
 

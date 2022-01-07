@@ -37,6 +37,7 @@ section.index:nth-of-type(1) {
       max-width: 90%;
   }
   .desc-progr{
+      background-color: black;
       max-width: 40%;
       @include s {
         max-width: 90%;
@@ -196,8 +197,9 @@ section.index:nth-of-type(4){
                 border-radius: 2rem;
             }
             a:hover{
-                
+                transition: 0.5s;
                 background-color: #993E90;
+                color: white;
             }
     }
     

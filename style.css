@@ -44,6 +44,7 @@ section.index:nth-of-type(1) ul {
   max-width: 90%;
 }
 section.index:nth-of-type(1) .desc-progr {
+  background-color: black;
   max-width: 40%;
 }
 @media screen and (max-width: 1024px) {
@@ -210,7 +211,9 @@ section.index:nth-of-type(4) .newsletter a {
   border-radius: 2rem;
 }
 section.index:nth-of-type(4) .newsletter a:hover {
+  transition: 0.5s;
   background-color: #993E90;
+  color: white;
 }
 
 * {
@@ -331,9 +334,16 @@ nav {
   display: flex;
   padding: 1rem 2rem;
   background-color: #A03636;
-  border-radius: 5rem;
+  border: #A03636 1px solid;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
+  color: white;
+}
+.btn-inscription:hover {
+  background: none;
+  color: white;
+  transition: 0.5s;
 }
 .btn-inscription a {
   text-transform: uppercase;
@@ -392,6 +402,7 @@ footer a :nth-child(1) {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 32px;
+  color: white;
 }
 .div-inscription .champ {
   width: 100%;
@@ -402,9 +413,10 @@ footer a :nth-child(1) {
   font-weight: 500;
   background: none;
   border-radius: 5px;
-  border: solid black 1px;
+  border: solid white 1px;
   margin: 5% 0;
-  box-shadow: 0px 0px 8px -3px #000000;
+  box-shadow: 0px 0px 8px -3px #ffffff;
+  color: white;
 }
 .div-inscription .btn-envoyer {
   width: 60%;
@@ -412,20 +424,25 @@ footer a :nth-child(1) {
   font-size: 16px;
   font-weight: 500;
   background: none;
-  border: solid black 1px;
+  border: solid white 1px;
   border-radius: 5px;
   margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
+.div-inscription .btn-envoyer:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
 }
 .div-inscription .btn-envoyer:active {
-  color: gray;
-  border: solid gray 1px;
+  color: white;
+  border: solid white 1px;
 }
 
-.fa-chevron-left {
-  font-size: 50px;
-  margin-left: 25%;
-  margin-top: 8%;
-  position: absolute;
+.body_inscription {
+  background-image: url("img/fondinscription2.png");
+  background-size: cover;
 }
 
 .success {
@@ -650,11 +667,18 @@ section.contact:nth-of-type(1) .left-contact .message {
   height: 5em;
 }
 section.contact:nth-of-type(1) .left-contact .submit {
+  cursor: pointer;
   width: 40%;
 }
 @media screen and (max-width: 800px) {
   section.contact:nth-of-type(1) .left-contact .submit {
     width: 60%;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.contact:nth-of-type(1) .left-contact .submit {
+    margin-bottom: 60px;
   }
 }
 section.contact:nth-of-type(1) .right-contact {
@@ -785,9 +809,14 @@ section.contact:nth-of-type(2) .newsletter a {
   border-radius: 2rem;
 }
 section.contact:nth-of-type(2) .newsletter a:hover {
+  color: white;
   background-color: #993E90;
+  transition: 0.5s;
 }
 
+.contact {
+  padding-top: 200px;
+}
 .contact .champ {
   width: 100%;
   border: 0;
@@ -795,22 +824,29 @@ section.contact:nth-of-type(2) .newsletter a:hover {
   height: 54px;
   font-size: 20px;
   font-weight: 500;
-  background: white;
+  background: none;
   border-radius: 5px;
   border: solid white 1px;
   margin: 2% 0;
   box-shadow: 0px 0px 8px -3px #ffffff;
+  color: white;
 }
 .contact .btn-envoyer {
   width: 60%;
   height: 48px;
   font-size: 16px;
   font-weight: 500;
-  background: white;
+  background: none;
   border: solid white 1px;
   border-radius: 5px;
   margin-top: 20px;
   padding: 0;
+  color: white;
+}
+.contact .btn-envoyer:hover {
+  color: white;
+  background-color: #A03636;
+  transition: 0.5s;
 }
 .contact textarea {
   height: 100px;
@@ -820,11 +856,12 @@ section.contact:nth-of-type(2) .newsletter a:hover {
   padding: 10px 0 0 10px;
   font-size: 16px;
   font-weight: 500;
-  background: white;
+  background: none;
   border-radius: 5px;
   border: solid white 1px;
   margin: 2% 0;
   box-shadow: 0px 0px 8px -3px #ffffff;
+  color: white;
 }
 
 * {
@@ -855,7 +892,7 @@ section.contact:nth-of-type(2) .newsletter a:hover {
 .listeh2 {
   text-align: center;
   font-size: 24px;
-  margin: 5%;
+  padding: 8%;
 }
 
 .page-admin {

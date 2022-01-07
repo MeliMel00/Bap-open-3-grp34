@@ -101,12 +101,16 @@
             <a href="https://www.esilv.fr/" target="_blank"><img src="img/esilv.png" alt="logo_esilv" ></a>
         </div>
         
+        <?php
 
+include 'footer_white.php';
+
+?>
 
     </section>
         
 
-
+ 
     
 
 </body>

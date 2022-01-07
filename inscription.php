@@ -14,15 +14,13 @@
 
 
 
-<body>
+<body class="body_inscription">
 
     <?php 
 
     include 'header.php'; 
 
     ?>
-
-    <a href="index.php"><i class="fas fa-chevron-left"></i></a>
 
 
 
@@ -91,7 +89,7 @@
 
     <?php
 
-        include 'footer.php';
+        include 'footer_white.php';
 
     ?>
 

@@ -32,9 +32,14 @@ section.contact:nth-of-type(1) {
             height: 5em;
         }
         .submit {
+            cursor: pointer;
             width: 40%;
             @include xs {
                 width: 60%;
+                margin-bottom: 60px;
+            }
+            @include s {
+                margin-bottom: 60px;
             }
         }
     }
@@ -48,6 +53,7 @@ section.contact:nth-of-type(1) {
             margin-left: 0;
             width: 100%;
             justify-content: center;
+
         }
         @include xs {
             flex-direction: row;
@@ -148,15 +154,19 @@ section.contact:nth-of-type(2){
                 border:  1px solid rgb(151, 151, 151);
                 padding: 1rem 2rem;
                 border-radius: 2rem;
+                
             }
             a:hover{
-                
+                color: white;
                 background-color: #993E90;
+                transition: 0.5s;
         }
     }
 }
 
 .contact{
+
+    padding-top: 200px;
     .champ{
         width: 100%;
         border: 0;
@@ -164,11 +174,12 @@ section.contact:nth-of-type(2){
         height: 54px;
         font-size: 20px;
         font-weight: 500;
-        background: white;
+        background: none;
         border-radius: 5px;
         border: solid rgb(255, 255, 255) 1px;
         margin: 2% 0;
         box-shadow: 0px 0px 8px -3px #ffffff;
+        color: white;
     }
     
     .btn-envoyer{
@@ -176,11 +187,18 @@ section.contact:nth-of-type(2){
         height: 48px;
         font-size: 16px;
         font-weight: 500;
-        background: white;
+        background: none;
         border: solid rgb(255, 255, 255) 1px;
         border-radius: 5px;
         margin-top: 20px;
         padding: 0;
+        color: white;
+
+        &:hover{
+            color: white;
+            background-color: #A03636;
+            transition: 0.5s;
+        }
     }
     textarea{
         height: 100px;
@@ -190,10 +208,11 @@ section.contact:nth-of-type(2){
         padding: 10px 0 0 10px;
         font-size: 16px;
         font-weight: 500;
-        background: white;
+        background: none;
         border-radius: 5px;
         border: solid rgb(255, 255, 255) 1px;
         margin: 2% 0;
         box-shadow: 0px 0px 8px -3px #ffffff;
+        color: white;
     }
 }
