@@ -179,7 +179,8 @@ section.index:nth-of-type(4){
     
     p{
         width: 40%;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         padding-bottom: 2rem;
         @include xs {
             width: 90%;
@@ -188,17 +189,32 @@ section.index:nth-of-type(4){
     .newsletter{
             display: flex;
             flex-direction: row;
+            width: 35%;
+            margin-left: auto;
+            margin-right: auto;
+        
+        @include xs {
             width: 90%;
-            justify-content: center;
-            a{
-                border:  1px solid rgb(151, 151, 151);
-                padding: 1rem 2rem;
-                border-radius: 2rem;
+        }
+
+        input, button {
+            padding: 1rem 1rem;
+            border: 1px solid #ebebeb;
+        }
+        input {
+            width: 90%;
+            color: #1a1a1a;
+        }
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            :nth-child(1){
+                opacity: 50%;
             }
-            a:hover{
-                
-                background-color: #993E90;
-            }
+        }
+        button:hover{
+            background-color: #993E90;
+        }
     }
     
 }

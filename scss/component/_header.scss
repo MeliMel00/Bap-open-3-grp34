@@ -1,6 +1,6 @@
 @import  "../mixins/mixins";
 header{
-    width: 90%;
+    width: auto;
     background-color: #0E0034;
     height: 8vh;
     display: flex;
@@ -9,8 +9,6 @@ header{
     justify-content: space-between;
     // justify-content: center;
     padding: 0 5%;
-    position: fixed;
-    z-index: 8000;
 }
 nav {
     display: none;
@@ -24,15 +22,13 @@ nav {
     width: 2rem;
 
     .burger-open {
-        cursor: pointer;
         ul{
         
             height: 0.40vh;
             width: 100%;
             background-color: white;
-            
         }
-        .click-nav{
+        a{
             :nth-child(1), :nth-child(2){
                 margin-bottom: 0.40vh;
             }

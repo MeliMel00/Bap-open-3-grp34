@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Inscription - Open-3</title>
+    <title>Document</title>
 </head>
 
 
@@ -22,7 +22,7 @@
 
     ?>
 
-    <a href="index.php">RETOUR</a>
+    <a href="index.php"><i class="fas fa-chevron-left"></i></a>
 
 
 
