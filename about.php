@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>À Propos - Open-3</title>
 </head>
 
 <body>
@@ -41,11 +41,11 @@
         <div class="image">
 
             <div>
-                <img src="img/about1.png" alt="" class="left">
-                <img src="img/about2.png" alt="" class="right">
+                <img src="img/about1.png" alt="Homme Conférence" class="left">
+                <img src="img/about2.png" alt="Femme Conférence Tech" class="right">
             </div>
             <div>
-                <img src="img/about3.png" alt="" class="bottom">
+                <img src="img/about3.png" alt="Homme tech Dev Web Présentation" class="bottom">
             </div>
            
        </div>
@@ -57,7 +57,7 @@
         <div class="image">
             
             <div>
-                <img src="img/equipe1.jpg" alt="">
+                <img src="img/equipe1.jpg" alt="Membre équipe numéro 1">
 
                 <p>
                     Nom et Prénom
@@ -65,21 +65,21 @@
             </div>
 
             <div>
-                <img src="img/equipe2.jpg" alt="">
+                <img src="img/equipe2.jpg" alt="Membre équipe numéro 2">
                 <p>
                 Nom et Prénom
                 </p>
             </div>
 
             <div>
-                <img src="img/equipe3.jpg" alt="">
+                <img src="img/equipe3.jpg" alt="Membre équipe numéro 3">
                 <p>
                 Nom et Prénom
                 </p>
             </div>
 
             <div>
-                <img src="img/equipe4.jpg" alt="">
+                <img src="img/equipe4.jpg" alt="Membre équipe numéro 4">
                 <p>
                 Nom et Prénom
                 </p>
@@ -96,9 +96,9 @@
 
            
         <div class="image">
-            <img src="img/iim.png" alt="">
-            <img src="img/emlv.png" alt="">
-            <img src="img/esilv.png" alt="">
+            <a href="https://www.iim.fr/"><img src="img/iim.png" alt=""></a>
+            <a href="https://www.emlv.fr/"><img src="img/emlv.png" alt=""></a>
+            <a href="https://www.esilv.fr/"><img src="img/esilv.png" alt=""></a>
         </div>
         
 

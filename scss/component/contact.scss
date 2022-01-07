@@ -8,6 +8,7 @@ section.contact:nth-of-type(1) {
         flex-direction: column;
         align-items: center;
         background: black;
+        padding-top: 8rem;
     }
     
     h2{
@@ -26,6 +27,14 @@ section.contact:nth-of-type(1) {
         form {
             display: flex;
             flex-direction: column;
+            .champ {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                border: 1px solid #707070;
+                resize: none;
+                color: #928888;
+                padding: 0.75rem 0.5rem;
+            }
         }
         .message{
             margin-top: 0;
@@ -33,6 +42,7 @@ section.contact:nth-of-type(1) {
         }
         .submit {
             width: 40%;
+            border-radius: 1rem;
             @include xs {
                 width: 60%;
             }
@@ -83,9 +93,16 @@ section.contact:nth-of-type(1) {
                 span{    
                     font-size: 1.5em;
                     padding: 0.5rem 1.5rem;
+                    
                     @include xxs{
                         font-size: 1rem;
                         padding: 0.5rem;
+                    }
+                    a:nth-of-type(2){
+                        margin: 0 5%;
+                        @include xxs{
+                            margin: 0;
+                        }
                     }
                 }
                 li{  
@@ -119,74 +136,33 @@ section.contact:nth-of-type(1) {
    
 }
 section.contact:nth-of-type(2){
-    .newsletter{
-        display: flex;
-        flex-direction: row;
-        width: 35%;
-        margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+    
+    p{
+        width: 40%;
+        text-align: center;
+        padding-bottom: 2rem;
         @include xs {
             width: 90%;
         }
-
-        input, button {
-            padding: 1rem 1rem;
-            border: 1px solid #ebebeb;
-        }
-        input {
+    }
+    .newsletter{
+            display: flex;
+            flex-direction: row;
             width: 90%;
-            color: #1a1a1a;
-        }
-        button {
-            cursor: pointer;
-            background-color: transparent;
-            :nth-child(1){
-                opacity: 50%;
+            justify-content: center;
+            a{
+                border:  1px solid rgb(151, 151, 151);
+                padding: 1rem 2rem;
+                border-radius: 2rem;
             }
-        }
-        button:hover{
-            background-color: #993E90;
-        }
-    }
-}
-
-.contact{
-    .champ{
-        width: 100%;
-        border: 0;
-        padding-left: 10px;
-        height: 54px;
-        font-size: 20px;
-        font-weight: 500;
-        background: white;
-        border-radius: 5px;
-        border: solid rgb(255, 255, 255) 1px;
-        margin: 2% 0;
-        box-shadow: 0px 0px 8px -3px #ffffff;
-    }
-    
-    .btn-envoyer{
-        width: 60%;
-        height: 48px;
-        font-size: 16px;
-        font-weight: 500;
-        background: white;
-        border: solid rgb(255, 255, 255) 1px;
-        border-radius: 5px;
-        margin-top: 20px;
-        padding: 0;
-    }
-    textarea{
-        height: 100px;
-        resize: none;
-        width: 100%;
-        border: 0;
-        padding: 10px 0 0 10px;
-        font-size: 16px;
-        font-weight: 500;
-        background: white;
-        border-radius: 5px;
-        border: solid rgb(255, 255, 255) 1px;
-        margin: 2% 0;
-        box-shadow: 0px 0px 8px -3px #ffffff;
+            a:hover{
+                
+                background-color: #993E90;
+            }
     }
 }

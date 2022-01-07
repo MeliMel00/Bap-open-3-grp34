@@ -3,11 +3,11 @@
         <div class="burger">
             <div class="open">
                 <div class="burger-open">
-                    <a href="#">
+                    <span class="click-nav">
                         <ul></ul>
                         <ul></ul>
                         <ul></ul>
-                    </a>
+                    </span>
                 </div>
             </div>
             <div class="close">
@@ -62,7 +62,7 @@
         <a href="contact.php" class ="link-desc">Contact</a>
         <a href="inscription.php">
             <div class="btn-inscription">
-                <p>inscription</p>
+                <p>Inscription</p>
             </div>
         </a>
     </div>

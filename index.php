@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Index</title>
+    <title>Accueil - Open-3</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         <ul>
         <a href="inscription.php">
             <div class="btn-inscription">
-                <p>inscription</p>
+                <p>Inscription</p>
             </div>
         </a>
         </ul>
@@ -40,7 +40,7 @@
         </ul>
         <ul>
         <div class="div-conf">
-            <img src="./img/img-men-2.png" alt="">
+            <img src="./img/img-men-2.png" alt="Image Homme Conférence">
             <!-- <img src="#" alt="img conférence numero 1"> -->
             </img>
             <div class="text-conf">
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="div-conf">
-            <img src="./img/img-girl-1.png" alt="">
+            <img src="./img/img-girl-1.png" alt="Image Femme conférence">
             <!-- <img src="#" alt="img conférence numero 1"> -->
             </img>
             <div class="text-conf">
@@ -69,7 +69,7 @@
             <h2 class="title-sect" style="color: white">Hackaton de OPEN3</h2>
         </ul>
         <ul class="card-sect-ul">
-            <img src="./img/img-men-1.png" class="card-hackaton-1">
+            <img src="./img/img-men-1.png" alt="Image Homme DevWeb présentation"class="card-hackaton-1">
 
             </div>
             <div class="card-hackaton-2">
@@ -87,12 +87,11 @@
 
     <section class="index">
     <ul class="title-sect-ul">
-            <h2 class="title-sect" style="text-decoration: none">Newsletter</h2>
+            <h2 class="title-sect" style="text-decoration: none">Récupérez notre Programme</h2>
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente commodi ullam saepe iure soluta nam totam omnis sunt rerum odio in vero quasi, maxime incidunt, eius pariatur rem repellat deleniti.</p>
         <div class="newsletter">
-            <input type="text" placeholder="Votre Email">
-            <button type="submit"><i class="fas fa-chevron-right"></i></button>
+           <a href="./img/pdf.pdf" download>Télécharger notre PDF</a>
            
         </div> 
     </section>
