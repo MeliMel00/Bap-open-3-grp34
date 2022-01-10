@@ -209,6 +209,7 @@ section.index:nth-of-type(4) .newsletter a {
   border: 1px solid #979797;
   padding: 1rem 2rem;
   border-radius: 2rem;
+  transition: 0.5s;
 }
 section.index:nth-of-type(4) .newsletter a:hover {
   transition: 0.5s;
@@ -339,6 +340,7 @@ nav {
   align-items: center;
   justify-content: center;
   color: white;
+  transition: 0.5s;
 }
 .btn-inscription:hover {
   background: none;
@@ -429,6 +431,7 @@ footer a :nth-child(1) {
   margin-top: 20px;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 .div-inscription .btn-envoyer:hover {
   background-color: white;
@@ -597,6 +600,14 @@ footer a :nth-child(1) {
   aspect-ratio: 1/1;
   margin: 2%;
   object-fit: cover;
+  transition: transform 0.2s;
+}
+.equipe img:hover {
+  -ms-transform: scale(1.02);
+  /* IE 9 */
+  -webkit-transform: scale(1.02);
+  /* Safari 3-8 */
+  transform: scale(1.02);
 }
 
 .lastsection {
@@ -620,6 +631,13 @@ footer a :nth-child(1) {
 .lastsection .image img {
   width: 100%;
   height: auto;
+}
+.lastsection .image img:hover {
+  -ms-transform: scale(1.02);
+  /* IE 9 */
+  -webkit-transform: scale(1.02);
+  /* Safari 3-8 */
+  transform: scale(1.02);
 }
 .lastsection .image a:nth-of-type(2) {
   margin: 0 5%;
@@ -807,6 +825,7 @@ section.contact:nth-of-type(2) .newsletter a {
   border: 1px solid #979797;
   padding: 1rem 2rem;
   border-radius: 2rem;
+  transition: 0.5s;
 }
 section.contact:nth-of-type(2) .newsletter a:hover {
   color: white;
@@ -842,6 +861,7 @@ section.contact:nth-of-type(2) .newsletter a:hover {
   margin-top: 20px;
   padding: 0;
   color: white;
+  transition: 0.5s;
 }
 .contact .btn-envoyer:hover {
   color: white;

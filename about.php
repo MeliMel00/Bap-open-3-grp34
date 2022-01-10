@@ -57,32 +57,56 @@
         <div class="image">
             
             <div>
+                <a href="https://www.linkedin.com/in/rauber/" target="blank">
+
+
+                
                 <img src="img/equipe1.jpg" alt="Membre équipe numéro 1">
 
                 <p>
-                    Nom et Prénom
+                Nicolas RAUBER
                 </p>
+
+                </a>
             </div>
 
             <div>
+                <a href="https://www.linkedin.com/in/alexisbougy/" target="blank">
+
+
+                
                 <img src="img/equipe2.jpg" alt="Membre équipe numéro 2">
                 <p>
-                Nom et Prénom
+                Alexis Bougy
                 </p>
+
+                </a>
             </div>
 
             <div>
+                <a href="https://www.linkedin.com/in/marie-bernard-55884a4a/" target="blank">
+
+
+                
                 <img src="img/equipe3.jpg" alt="Membre équipe numéro 3">
                 <p>
-                Nom et Prénom
+                Marie BERNARD
                 </p>
+
+                </a>
             </div>
 
             <div>
+                <a href="https://www.linkedin.com/in/pierrick-chevron-42b05810b/" target="blank">
+
+
+                
                 <img src="img/equipe4.jpg" alt="Membre équipe numéro 4">
                 <p>
-                Nom et Prénom
+                Pierrick Chevron
                 </p>
+
+                </a>
             </div>
 
         </div>

@@ -53,9 +53,17 @@
             </div>
         </div>
     </nav>
+
+    <a href="index.php">
+    
     <div class="logo-header">
-        <img src="./img/logo_open_3.png" alt="">
+        
+            <img src="./img/logo_open_3.png" alt="">
+
+       
     </div>
+
+    </a>
     <div class="link-page">
         <a href="index.php" class ="link-desc">Accueil</a>
         <a href="about.php" class ="link-desc">À propos</a>
