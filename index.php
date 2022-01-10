@@ -91,7 +91,7 @@
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente commodi ullam saepe iure soluta nam totam omnis sunt rerum odio in vero quasi, maxime incidunt, eius pariatur rem repellat deleniti.</p>
         <div class="newsletter">
-           <a href="./img/pdf.pdf" download>Télécharger notre PDF</a>
+           <a href="newsletter.pdf" download>Télécharger notre PDF</a>
            
         </div> 
     </section>
